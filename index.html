@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gabriel Nii Attoh Quaye — AI Engineer</title>
-<meta name="description" content="Gabriel Nii Attoh Quaye — AI engineer in Tourcoing, France. Data / AI Engineer (alternance) at OXYA, engineering student at JUNIA ISEN. Retrieval systems, medical ML, local assistants." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Gabriel" />
+<title>Gabriel Nii Attoh Quaye · AI engineer</title>
+<meta name="description" content="Gabriel Nii Attoh Quaye, AI engineer in Loos, near Lille. Data / AI Engineer (alternance) at OXYA, AI engineering student at JUNIA ISEN, builder of cvmaster.live." />
 <meta name="author" content="Gabriel Nii Attoh Quaye" />
-<meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)" />
-<meta property="og:title" content="Gabriel Nii Attoh Quaye — AI Engineer" />
-<meta property="og:description" content="Data / AI Engineer at OXYA. Retrieval systems, medical ML, local assistants." />
+<meta name="theme-color" content="#0b0b0c" />
+<meta property="og:title" content="Gabriel Nii Attoh Quaye · AI engineer" />
+<meta property="og:description" content="Data / AI Engineer at OXYA. Builder of cvmaster.live, Strikebase and Jarvis." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://official-portfolio-gamma.vercel.app" />
+<meta property="og:image" content="https://official-portfolio-gamma.vercel.app/me.jpg" />
 <meta name="twitter:card" content="summary" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b8410f'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia,serif' font-size='42' fill='%23f3efe6'%3EG%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b0b0c'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='36' fill='%23c6f432'%3EGQ%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Schibsted+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <script>
   (function () {
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -25,64 +27,57 @@
 </script>
 <style>
 :root {
-  --paper: #f3efe6; --paper-2: #ebe5d8; --ink: #1b1a17; --ink-2: #4b473f; --muted: #7b7568; --rule: #d8d1c2;
-  --accent: #b8410f; --ok: #3d8a4c; --warn: #b07a10;
-  --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
-  --sans: 'Schibsted Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --bg: #0b0b0c; --panel: #151517; --panel-2: #1e1e21; --ink: #f2f2ee; --ink-2: #b9b9b2; --muted: #7c7c76; --rule: #27272b;
+  --hi: #c6f432; --hi-ink: #0b0b0c; --hi-text: #c6f432; --ok: #5fd27a; --warn: #f2b84b;
+  --sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
   --ease: cubic-bezier(.2, .8, .2, 1);
-  --gutter: clamp(16px, 4vw, 40px); --max: 1200px;
-  color-scheme: light;
+  --gutter: clamp(16px, 4vw, 40px); --max: 1240px;
+  color-scheme: dark;
 }
-:root[data-theme="dark"] {
-  --paper: #131210; --paper-2: #1d1b18; --ink: #ece7dc; --ink-2: #bdb6a8; --muted: #8a8475; --rule: #2f2c27;
-  --accent: #ee6a3a; --ok: #5fb36e; --warn: #e0a83a; color-scheme: dark;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #131210; --paper-2: #1d1b18; --ink: #ece7dc; --ink-2: #bdb6a8; --muted: #8a8475; --rule: #2f2c27;
-    --accent: #ee6a3a; --ok: #5fb36e; --warn: #e0a83a; color-scheme: dark;
-  }
+:root[data-theme="light"] {
+  --bg: #f4f4f1; --panel: #ffffff; --panel-2: #eaeae5; --ink: #0b0b0c; --ink-2: #3c3c39; --muted: #6c6c67; --rule: #dadad4;
+  --hi-text: #4a7a0b; --ok: #2f8a4c; --warn: #a8730c; color-scheme: light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 72px; overflow-x: clip; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-::selection { background: var(--accent); color: var(--paper); }
-h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: balance; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+::selection { background: var(--hi); color: var(--hi-ink); }
+h1, h2, h3 { margin: 0; font-weight: 800; text-wrap: balance; }
 p { margin: 0; text-wrap: pretty; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 button { font: inherit; color: inherit; }
 img { display: block; max-width: 100%; }
-a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .22em; text-decoration-color: var(--rule); transition: color .2s, text-decoration-color .2s; }
-a:hover { color: var(--accent); text-decoration-color: currentColor; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .22em; text-decoration-color: var(--muted); transition: color .2s, text-decoration-color .2s; }
+a:hover { color: var(--hi-text); text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--hi-text); outline-offset: 3px; border-radius: 2px; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
-.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.skip { position: absolute; left: -9999px; top: 8px; background: var(--ink); color: var(--paper); padding: 8px 12px; z-index: 100; }
+.skip { position: absolute; left: -9999px; top: 8px; background: var(--hi); color: var(--hi-ink); padding: 8px 12px; z-index: 100; }
 .skip:focus { left: 8px; }
-.print-only { display: none; }
+.label { font-size: .75rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
 ::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
 
 /* header */
-.site-head { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--paper) 88%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s; }
+.site-head { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 86%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s; }
 .site-head.scrolled { border-bottom-color: var(--rule); }
 .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 24px; }
-.brand { font: 400 1.2rem/1 var(--serif); letter-spacing: -.01em; text-decoration: none; white-space: nowrap; }
+.brand { font-weight: 800; font-stretch: 112%; font-size: 1rem; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
 .brand:hover { color: var(--ink); }
-.nav { display: none; gap: 26px; }
-.nav a { text-decoration: none; font-size: .92rem; color: var(--ink-2); position: relative; }
+.brand i { font-style: normal; color: var(--hi-text); }
+.nav { display: none; gap: 28px; }
+.nav a { text-decoration: none; font-size: .92rem; font-weight: 500; color: var(--ink-2); position: relative; }
 .nav a:hover, .nav a[aria-current="true"] { color: var(--ink); }
-.nav a[aria-current="true"]::before { content: ''; position: absolute; left: -10px; top: .55em; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+.nav a[aria-current="true"]::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--hi); }
 .tools { display: flex; align-items: center; gap: 6px; }
-.tool { font: 500 .78rem/1 var(--sans); background: none; color: var(--ink-2); border: 1px solid var(--rule); border-radius: 999px; padding: 8px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: border-color .2s, color .2s; }
+.tool { font: 600 .78rem/1 var(--sans); background: none; color: var(--ink-2); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 11px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: border-color .2s, color .2s; }
 .tool:hover { border-color: var(--ink-2); color: var(--ink); }
 .tool svg { width: 12px; height: 12px; }
 .lang .off { color: var(--muted); }
 .lang .on { color: var(--ink); }
 .menu-panel { border-top: 1px solid var(--rule); padding: 8px var(--gutter) 20px; }
-.menu-panel a { display: block; font: 400 1.75rem/1.2 var(--serif); padding: 10px 0; text-decoration: none; border-bottom: 1px solid var(--rule); }
+.menu-panel a { display: block; font-weight: 800; font-size: 1.6rem; text-transform: uppercase; padding: 10px 0; text-decoration: none; border-bottom: 1px solid var(--rule); }
 @media (max-width: 479px) {
   #themeLabel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .tool { padding: 8px 10px; }
@@ -91,93 +86,96 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 @media (min-width: 900px) { .nav { display: flex; } .menu-btn, .menu-panel { display: none !important; } }
 
 /* buttons */
-.btn { display: inline-flex; align-items: center; gap: .5em; padding: .82em 1.3em; border: 0; border-radius: 999px; background: var(--ink); color: var(--paper); text-decoration: none; font-weight: 500; font-size: .95rem; line-height: 1.2; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .2s, transform .35s var(--ease); }
-.btn:hover { background: var(--accent); color: var(--paper); }
+.btn { display: inline-flex; align-items: center; gap: .5em; padding: .85em 1.3em; border: 0; border-radius: 4px; background: var(--hi); color: var(--hi-ink); text-decoration: none; font-weight: 700; font-size: .95rem; line-height: 1.2; cursor: pointer; transition: background-color .2s, color .2s, box-shadow .2s, transform .35s var(--ease); }
+.btn:hover { background: var(--ink); color: var(--bg); }
 .btn-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule); }
-.btn-ghost:hover { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1px currentColor; }
+.btn-ghost:hover { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
 
 /* hero */
-.hero { padding-top: clamp(40px, 7vw, 96px); padding-bottom: clamp(56px, 8vw, 104px); }
-.hero-grid { display: grid; gap: 40px; align-items: end; }
-@media (min-width: 960px) { .hero-grid { grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr); gap: 64px; align-items: start; } }
+.hero { padding-top: clamp(36px, 6vw, 80px); padding-bottom: clamp(56px, 8vw, 100px); }
+.hero-grid { display: grid; gap: 40px; }
+@media (min-width: 960px) { .hero-grid { grid-template-columns: minmax(0, 1.45fr) minmax(0, .8fr); gap: 64px; align-items: start; } }
 .hero.no-photo .hero-grid { grid-template-columns: 1fr; }
-.eyebrow { display: flex; flex-wrap: wrap; gap: 4px 18px; color: var(--muted); font-size: .92rem; margin-bottom: clamp(22px, 4vw, 40px); }
-.hero h1 { font: 400 clamp(3rem, 8vw, 7rem)/.92 var(--serif); letter-spacing: -.035em; font-variation-settings: "opsz" 72; }
-.hero h1 .line { display: block; overflow: hidden; padding: .12em .1em .26em 0; margin: -.12em 0 -.26em; }
+.eyebrow { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-bottom: clamp(20px, 3.5vw, 34px); }
+.eyebrow span:last-child { color: var(--ink-2); }
+.hero h1 { font-size: clamp(2.4rem, 6.2vw, 5.6rem); line-height: .9; font-weight: 850; font-stretch: 114%; letter-spacing: -.01em; text-transform: uppercase; }
+.hero h1 .line { display: block; overflow: hidden; padding: .06em .05em .06em 0; margin: -.06em 0; }
 .hero h1 .line > span { display: inline-block; }
-.hero h1 em { font-weight: 300; color: var(--ink-2); }
-.lead { font: 400 clamp(1.3rem, 2.3vw, 1.75rem)/1.35 var(--serif); color: var(--ink-2); max-width: 30ch; margin-top: clamp(22px, 3vw, 34px); font-variation-settings: "opsz" 24; }
-.now { display: flex; align-items: baseline; gap: .65em; margin-top: 22px; font-size: 1rem; color: var(--ink-2); max-width: 46ch; }
-.now::before { content: ''; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ok) 18%, transparent); transform: translateY(-2px); }
-.now b { font-weight: 600; color: var(--ink); }
+.hero h1 .soft { color: var(--muted); }
+.lead { font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.4; color: var(--ink); max-width: 30ch; margin-top: clamp(24px, 3vw, 36px); }
+.now { display: flex; align-items: baseline; gap: .7em; margin-top: 18px; color: var(--ink-2); max-width: 44ch; }
+.now::before { content: ''; flex: none; width: 8px; height: 8px; background: var(--hi); transform: translateY(-1px); }
+.now b { font-weight: 700; color: var(--ink); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
-.portrait { margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 18px; overflow: hidden; background: var(--paper-2); max-height: 78vh; }
+.portrait { margin: 0; position: relative; aspect-ratio: 4 / 5; border-radius: 4px; overflow: hidden; background: var(--panel); max-height: 78vh; }
 .portrait img { width: 100%; height: 100%; object-fit: cover; }
+.portrait figcaption { position: absolute; left: 12px; bottom: 12px; background: var(--hi); color: var(--hi-ink); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 8px; border-radius: 2px; }
 @media (max-width: 959px) { .portrait { max-width: 420px; } }
 
 /* ask */
 .ask { margin-top: 40px; max-width: 520px; }
-.ask label { display: block; font-size: .92rem; color: var(--muted); margin-bottom: 8px; }
+.ask label { display: block; margin-bottom: 10px; }
 .ask-field { display: flex; gap: 8px; }
-.ask-field input { flex: 1; min-width: 0; font: 400 1rem/1.2 var(--sans); color: var(--ink); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: .78em 1.1em; outline: none; transition: border-color .2s; }
-.ask-field input:focus { border-color: var(--ink-2); }
+.ask-field input { flex: 1; min-width: 0; font: 400 1rem/1.2 var(--sans); color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; padding: .8em 1em; outline: none; transition: border-color .2s; }
+.ask-field input:focus { border-color: var(--hi-text); }
 .ask-field input::placeholder { color: var(--muted); }
-.ask-go { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--ink); color: var(--paper); cursor: pointer; font-size: 1.05rem; transition: background-color .2s; }
-.ask-go:hover { background: var(--accent); }
+.ask-go { flex: none; width: 46px; border-radius: 4px; border: 0; background: var(--hi); color: var(--hi-ink); cursor: pointer; font-size: 1.05rem; font-weight: 700; transition: background-color .2s, color .2s; }
+.ask-go:hover { background: var(--ink); color: var(--bg); }
 .ask-sugg { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-.ask-sugg button { font-size: .82rem; line-height: 1.2; color: var(--ink-2); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 6px 11px; cursor: pointer; transition: border-color .2s, color .2s; }
+.ask-sugg button { font-size: .82rem; line-height: 1.2; color: var(--ink-2); background: transparent; border: 1px solid var(--rule); border-radius: 4px; padding: 6px 10px; cursor: pointer; transition: border-color .2s, color .2s; }
 .ask-sugg button:hover { border-color: var(--ink-2); color: var(--ink); }
-.ask-out { margin-top: 14px; padding: 16px 18px; border-radius: 14px; background: var(--paper-2); animation: rise .5s var(--ease) both; }
-.answer { font: 400 1.08rem/1.5 var(--serif); font-variation-settings: "opsz" 16; }
-.answer.typing::after { content: ''; display: inline-block; width: .45em; height: 1em; background: var(--accent); vertical-align: -.12em; margin-left: 2px; animation: blink 1s steps(1) infinite; }
+.ask-out { margin-top: 12px; padding: 16px 18px; border-radius: 4px; background: var(--panel); border-left: 3px solid var(--hi); animation: rise .5s var(--ease) both; }
+.answer { font-size: 1rem; line-height: 1.55; }
+.answer.typing::after { content: ''; display: inline-block; width: .5em; height: 1em; background: var(--hi); vertical-align: -.12em; margin-left: 2px; animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-.ask-link { display: inline-block; margin-top: 10px; font-size: .9rem; }
+.ask-link { display: inline-block; margin-top: 10px; font-size: .9rem; font-weight: 600; }
 
 /* sections */
 .section { border-top: 1px solid var(--rule); padding: clamp(64px, 9vw, 120px) 0; }
 .sec-head { display: grid; gap: 14px; margin-bottom: clamp(32px, 5vw, 56px); }
 @media (min-width: 900px) { .sec-head { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 48px; } }
-.sec-head h2 { font: 400 clamp(2.2rem, 5vw, 4rem)/1 var(--serif); letter-spacing: -.03em; }
-.sec-head p { color: var(--ink-2); max-width: 46ch; }
-.sub { font-size: .85rem; font-weight: 500; letter-spacing: .02em; color: var(--muted); margin: clamp(44px, 6vw, 64px) 0 12px; }
+.sec-head h2 { font-size: clamp(2.6rem, 6.5vw, 5.4rem); line-height: .92; font-weight: 850; font-stretch: 114%; text-transform: uppercase; }
+.sec-head h2 sup { font-size: .28em; font-weight: 700; color: var(--hi-text); vertical-align: top; margin-left: .2em; position: relative; top: .35em; }
+.sec-head p { color: var(--ink-2); max-width: 44ch; }
+.sub { margin: clamp(40px, 6vw, 60px) 0 12px; }
 
 /* projects */
 #work { padding-bottom: 0; }
-.proj { border-top: 1px solid var(--rule); padding: clamp(48px, 7vw, 88px) 0; min-height: min(86vh, 860px); display: grid; align-items: center; }
-.proj-in { display: grid; gap: 30px; align-items: center; }
+.proj { border-top: 1px solid var(--rule); padding: clamp(48px, 7vw, 88px) 0; min-height: min(80vh, 820px); display: grid; align-items: center; }
+.proj-in { display: grid; gap: 28px; align-items: center; }
 @media (min-width: 900px) {
   .proj-in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 80px); }
   .proj:nth-of-type(even) .viz { order: 2; }
 }
-.viz { margin: 0; position: relative; aspect-ratio: 5 / 4; border-radius: 18px; overflow: hidden; background: var(--paper-2); }
+.viz { margin: 0; position: relative; aspect-ratio: 5 / 4; border-radius: 4px; overflow: hidden; background: var(--panel); border: 1px solid var(--rule); }
 .viz canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; }
-.viz figcaption { position: absolute; right: 16px; top: 14px; font-size: .74rem; color: var(--muted); text-align: right; pointer-events: none; }
-.kicker { display: flex; gap: 12px; align-items: baseline; font-size: .9rem; color: var(--muted); }
-.kicker b { font: italic 400 1.15rem var(--serif); color: var(--accent); }
-.proj h3 { font: 400 clamp(2.2rem, 4.4vw, 3.6rem)/1.02 var(--serif); letter-spacing: -.025em; margin-top: 12px; }
-.proj .desc { font-size: 1.08rem; color: var(--ink-2); max-width: 46ch; margin-top: 18px; }
-.stack { font-size: .86rem; color: var(--muted); margin-top: 18px; }
-.links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; font-size: .95rem; }
+.viz figcaption { position: absolute; right: 14px; top: 12px; font-size: .74rem; color: var(--muted); text-align: right; pointer-events: none; }
+.kicker { display: flex; gap: 12px; align-items: baseline; }
+.kicker b { color: var(--hi-text); font-weight: 700; }
+.proj h3 { font-size: clamp(2.1rem, 4.4vw, 3.6rem); line-height: .98; font-weight: 850; font-stretch: 110%; margin-top: 14px; }
+.proj .desc { font-size: 1.1rem; line-height: 1.55; color: var(--ink-2); max-width: 42ch; margin-top: 18px; }
+.stack { font-size: .88rem; color: var(--muted); margin-top: 16px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; font-size: .95rem; font-weight: 600; }
+.live-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); margin-right: 6px; vertical-align: 1px; box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 25%, transparent); }
 .more { border-top: 1px solid var(--rule); padding: 40px 0 0; color: var(--ink-2); max-width: 70ch; }
 
 /* research */
 .paper-grid { display: grid; gap: 36px; align-items: center; }
 @media (min-width: 900px) { .paper-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 80px); } }
-.paper .cite { color: var(--muted); font-size: .9rem; }
-.paper h3 { font: 400 clamp(1.6rem, 3vw, 2.3rem)/1.12 var(--serif); letter-spacing: -.015em; margin: 12px 0 12px; }
+.paper h3 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); line-height: 1.12; font-weight: 800; margin: 12px 0 10px; }
 .paper .authors { color: var(--ink-2); font-size: .95rem; }
-.paper .authors b { font-weight: 500; color: var(--ink); }
-.paper .abstract { margin-top: 20px; color: var(--ink-2); max-width: 58ch; }
-.figs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 28px 0 24px; border-top: 1px solid var(--rule); }
-.figs div { padding: 16px 16px 0 0; }
-.figs b { display: block; font: 400 clamp(1.8rem, 4vw, 2.8rem)/1 var(--serif); letter-spacing: -.02em; }
+.paper .authors b { font-weight: 700; color: var(--ink); }
+.paper .abstract { margin-top: 18px; color: var(--ink-2); max-width: 52ch; }
+.figs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 16px; margin: 26px 0 22px; border-top: 1px solid var(--rule); }
+.figs div { padding-top: 16px; min-width: 0; }
+.figs b { display: block; font-size: clamp(1.4rem, 3.2vw, 2.4rem); line-height: 1; font-weight: 850; white-space: nowrap; }
 .figs span { display: block; margin-top: 6px; font-size: .85rem; color: var(--muted); }
 
 /* about */
 .about-grid { display: grid; gap: 40px; }
-@media (min-width: 900px) { .about-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 72px; } }
-.prose p { font: 400 clamp(1.18rem, 1.9vw, 1.38rem)/1.5 var(--serif); font-variation-settings: "opsz" 20; }
-.prose p + p { margin-top: 1em; }
+@media (min-width: 900px) { .about-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 72px; } }
+.prose p { font-size: clamp(1.15rem, 1.8vw, 1.35rem); line-height: 1.5; }
+.prose p + p { margin-top: 1em; color: var(--ink-2); }
 .kv { border-top: 1px solid var(--rule); margin: 0; }
 .kv > div { display: grid; grid-template-columns: 1fr; gap: 2px 20px; padding: 11px 0; border-bottom: 1px solid var(--rule); }
 .kv dt { color: var(--muted); font-size: .9rem; }
@@ -187,13 +185,11 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
 /* experience */
 .jobs { border-top: 1px solid var(--rule); }
-.job { display: grid; gap: 6px; padding: 26px 0; border-bottom: 1px solid var(--rule); }
+.job { display: grid; gap: 4px; padding: 24px 0; border-bottom: 1px solid var(--rule); }
 .job .when { font-size: .9rem; color: var(--muted); padding-top: .15em; }
-.job h3 { font: 500 1.12rem/1.3 var(--sans); }
-.job .org { color: var(--ink-2); margin-top: 2px; }
-.job ul { margin-top: 10px; color: var(--ink-2); font-size: .97rem; max-width: 66ch; }
-.job li { position: relative; padding-left: 1.1em; margin-top: 5px; }
-.job li::before { content: '–'; position: absolute; left: 0; color: var(--muted); }
+.job h3 { font-size: 1.15rem; font-weight: 700; line-height: 1.3; }
+.job .org { color: var(--ink-2); }
+.job .what { margin-top: 8px; color: var(--ink-2); max-width: 64ch; }
 @media (min-width: 780px) { .job { grid-template-columns: 190px minmax(0, 1fr); gap: 24px; } }
 
 /* writing */
@@ -203,69 +199,69 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .post-item { position: relative; }
 .post-link { appearance: none; background: none; border: 0; text-align: left; cursor: pointer; width: 100%; display: grid; gap: 4px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
 .post-link .d { font-size: .88rem; color: var(--muted); }
-.post-link .t { font: 400 clamp(1.25rem, 2.2vw, 1.6rem)/1.25 var(--serif); letter-spacing: -.01em; transition: color .2s; }
+.post-link .t { font-size: clamp(1.2rem, 2.1vw, 1.5rem); line-height: 1.25; font-weight: 700; transition: color .2s; }
 .post-link .x { color: var(--ink-2); font-size: .95rem; max-width: 64ch; margin-top: 4px; }
 .post-link .tg { font-size: .82rem; color: var(--muted); }
-.post-link:hover .t { color: var(--accent); }
+.post-link:hover .t { color: var(--hi-text); }
 @media (min-width: 780px) {
   .post-link { grid-template-columns: 190px minmax(0, 1fr) auto; column-gap: 24px; align-items: baseline; }
   .post-link .x { grid-column: 2; }
   .post-link .tg { grid-row: 1; grid-column: 3; }
 }
 .del { position: absolute; right: 0; bottom: 14px; }
-.admin { margin-top: 28px; padding: 20px; border: 1px dashed var(--rule); border-radius: 12px; }
+.admin { margin-top: 28px; padding: 20px; border: 1px dashed var(--rule); border-radius: 4px; }
 .admin .sub { margin: 0 0 12px; }
 .admin-row { display: flex; gap: 8px; flex-wrap: wrap; }
-.admin input, .admin textarea { font: 400 .95rem/1.5 var(--sans); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: .6em .8em; outline: none; }
+.admin input, .admin textarea { font: 400 .95rem/1.5 var(--sans); color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; padding: .6em .8em; outline: none; }
 .admin input:focus, .admin textarea:focus { border-color: var(--ink-2); }
 .admin input { flex: 1 1 200px; }
 .admin textarea { width: 100%; min-height: 200px; resize: vertical; }
-.admin .bad { border-color: var(--accent); animation: shake .3s; }
+.admin .bad { border-color: #e5484d; animation: shake .3s; }
 @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
 .composer { display: grid; gap: 10px; }
 .admin-note { color: var(--muted); font-size: .85rem; }
-dialog { border: 0; padding: 0; width: min(720px, calc(100vw - 24px)); max-width: none; max-height: calc(100dvh - 32px); background: var(--paper); color: var(--ink); border-radius: 12px; box-shadow: 0 30px 80px rgba(0,0,0,.28); overflow: auto; overscroll-behavior: contain; }
-dialog::backdrop { background: rgba(20, 18, 15, .45); }
+dialog { border: 1px solid var(--rule); padding: 0; width: min(720px, calc(100vw - 24px)); max-width: none; max-height: calc(100dvh - 32px); background: var(--bg); color: var(--ink); border-radius: 6px; box-shadow: 0 30px 80px rgba(0,0,0,.5); overflow: auto; overscroll-behavior: contain; }
+dialog::backdrop { background: rgba(0, 0, 0, .6); }
 html:has(dialog[open]) { overflow: hidden; }
-.post-bar { position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(20px, 5vw, 48px); background: var(--paper); border-bottom: 1px solid var(--rule); color: var(--muted); font-size: .88rem; }
-.read-bar { position: absolute; left: 0; bottom: -1px; width: 100%; height: 2px; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+.post-bar { position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px clamp(20px, 5vw, 48px); background: var(--bg); border-bottom: 1px solid var(--rule); color: var(--muted); font-size: .88rem; }
+.read-bar { position: absolute; left: 0; bottom: -1px; width: 100%; height: 2px; background: var(--hi); transform-origin: left; transform: scaleX(0); }
 .post-inner { padding: clamp(24px, 5vw, 48px); }
-.post-inner h2 { font: 400 clamp(1.7rem, 4vw, 2.5rem)/1.1 var(--serif); letter-spacing: -.02em; margin-bottom: 28px; }
-.reading p { font: 400 1.15rem/1.7 var(--serif); margin: 0 0 1em; font-variation-settings: "opsz" 16; }
-.reading h3 { font: 600 1rem/1.3 var(--sans); margin: 2em 0 .6em; }
+.post-inner h2 { font-size: clamp(1.6rem, 3.6vw, 2.3rem); line-height: 1.12; margin-bottom: 26px; }
+.reading p { font-size: 1.08rem; line-height: 1.7; margin: 0 0 1em; color: var(--ink-2); }
+.reading h3 { font-size: 1.05rem; margin: 2em 0 .6em; }
 .post-next { margin-top: 40px; padding: 20px 0 0; border: 0; border-top: 1px solid var(--rule); background: none; text-align: left; width: 100%; cursor: pointer; display: grid; gap: 6px; }
 .post-next .lbl { font-size: .85rem; color: var(--muted); }
-.post-next .nt { font: 400 1.4rem/1.25 var(--serif); transition: color .2s; }
-.post-next:hover .nt { color: var(--accent); }
+.post-next .nt { font-size: 1.3rem; font-weight: 700; transition: color .2s; }
+.post-next:hover .nt { color: var(--hi-text); }
 
 /* contact */
 .contact-grid { display: grid; gap: 56px; }
 @media (min-width: 1000px) { .contact-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 72px; align-items: start; } }
-.contact-big { font: 400 clamp(2.2rem, 5vw, 4rem)/1.05 var(--serif); letter-spacing: -.03em; }
-.email-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; margin-top: 22px; }
-.email { font: italic 400 clamp(1.4rem, 3.2vw, 2.3rem)/1.15 var(--serif); color: var(--accent); overflow-wrap: anywhere; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); }
-.contact-p { max-width: 52ch; color: var(--ink-2); margin-top: 26px; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 26px; }
+.contact-big { font-size: clamp(2.6rem, 6.5vw, 5.4rem); line-height: .92; font-weight: 850; font-stretch: 114%; text-transform: uppercase; }
+.email-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; margin-top: 26px; }
+.email { font-size: clamp(1.2rem, 2.8vw, 1.9rem); font-weight: 700; color: var(--hi-text); overflow-wrap: anywhere; text-decoration-color: color-mix(in srgb, var(--hi-text) 40%, transparent); }
+.contact-p { max-width: 48ch; color: var(--ink-2); margin-top: 22px; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 24px; font-weight: 600; }
 .contact-form { display: grid; gap: 18px; }
-.field label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 2px; }
+.field label { display: block; margin-bottom: 4px; }
 .field input, .field textarea { width: 100%; font: 400 1.05rem/1.5 var(--sans); color: var(--ink); background: transparent; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 8px 0; outline: none; transition: border-color .2s; }
 .field textarea { resize: vertical; min-height: 120px; }
-.field input:focus, .field textarea:focus { border-bottom-color: var(--ink); }
-.field .err { display: block; min-height: 1.3em; margin-top: 4px; font-size: .8rem; color: var(--accent); }
+.field input:focus, .field textarea:focus { border-bottom-color: var(--hi-text); }
+.field .err { display: block; min-height: 1.3em; margin-top: 4px; font-size: .8rem; color: #ff6b6b; }
 .form-foot { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
 .form-foot span { font-size: .85rem; color: var(--muted); }
 
 /* footer */
 .site-foot { border-top: 1px solid var(--rule); }
 .site-foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; padding-top: 28px; padding-bottom: 40px; color: var(--muted); font-size: .88rem; }
-.site-foot button { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; color: var(--muted); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: .22em; }
-.site-foot button:hover { color: var(--accent); }
+.site-foot button { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; color: var(--muted); text-decoration: underline; text-underline-offset: .22em; }
+.site-foot button:hover { color: var(--hi-text); }
 
 /* floating */
-.totop { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 44px; height: 44px; border-radius: 50%; background: var(--paper); border: 1px solid var(--rule); color: var(--ink); display: grid; place-items: center; text-decoration: none; opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity .3s, transform .3s var(--ease), color .2s; }
+.totop { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 44px; height: 44px; border-radius: 4px; background: var(--panel); border: 1px solid var(--rule); color: var(--ink); display: grid; place-items: center; text-decoration: none; opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity .3s, transform .3s var(--ease), color .2s, border-color .2s; }
 .totop.show { opacity: 1; transform: none; pointer-events: auto; }
-.totop:hover { color: var(--accent); }
-.toast { position: fixed; left: 50%; bottom: 24px; z-index: 60; transform: translate(-50%, 16px); opacity: 0; pointer-events: none; background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 999px; font-size: .88rem; transition: opacity .25s, transform .35s var(--ease); max-width: calc(100vw - 32px); text-align: center; }
+.totop:hover { color: var(--hi-text); border-color: var(--hi-text); }
+.toast { position: fixed; left: 50%; bottom: 24px; z-index: 60; transform: translate(-50%, 16px); opacity: 0; pointer-events: none; background: var(--hi); color: var(--hi-ink); font-weight: 600; padding: 10px 16px; border-radius: 4px; font-size: .88rem; transition: opacity .25s, transform .35s var(--ease); max-width: calc(100vw - 32px); text-align: center; }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
 /* cursor */
@@ -273,7 +269,7 @@ html:has(dialog[open]) { overflow: hidden; }
 html.cur-on .cur, html.cur-on .cur-ring { opacity: 1; }
 html.dlg-open .cur, html.dlg-open .cur-ring { display: none; }
 .cur::before { content: ''; position: absolute; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: #fff; transition: transform .25s var(--ease); }
-.cur-ring span { position: absolute; left: 0; top: 0; width: 34px; height: 34px; transform: translate(-50%, -50%); border: 1px solid #fff; border-radius: 50%; display: grid; place-items: center; font: 500 .62rem/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: #000; transition: width .4s var(--ease), height .4s var(--ease), background-color .25s, opacity .25s; }
+.cur-ring span { position: absolute; left: 0; top: 0; width: 34px; height: 34px; transform: translate(-50%, -50%); border: 1px solid #fff; border-radius: 50%; display: grid; place-items: center; font: 700 .62rem/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: #000; transition: width .4s var(--ease), height .4s var(--ease), background-color .25s, opacity .25s; }
 .cur-ring.link span { width: 52px; height: 52px; }
 .cur-ring.label span { width: 78px; height: 78px; background: #fff; }
 .cur-ring.label + .cur::before, .cur.hide::before { transform: scale(0); }
@@ -283,12 +279,12 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 
 /* motion */
 @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-@keyframes lineup { from { transform: translateY(110%); } to { transform: none; } }
+@keyframes lineup { from { transform: translateY(105%); } to { transform: none; } }
 .js .rise { opacity: 0; animation: rise .9s var(--ease) var(--d, 0s) forwards; }
-.js .hero h1 .line > span { transform: translateY(110%); animation: lineup 1.1s var(--ease) var(--d, 0s) forwards; }
+.js .hero h1 .line > span { transform: translateY(105%); animation: lineup 1s var(--ease) var(--d, 0s) forwards; }
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .js .reveal.in { opacity: 1; transform: none; }
-.js .proj .viz { opacity: 0; transform: scale(.96); transition: opacity 1s var(--ease), transform 1.2s var(--ease); }
+.js .proj .viz { opacity: 0; transform: translateY(24px); transition: opacity 1s var(--ease), transform 1.1s var(--ease); }
 .js .proj.in .viz { opacity: 1; transform: none; }
 .js .proj .proj-text > * { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
 .js .proj.in .proj-text > * { opacity: 1; transform: none; }
@@ -301,46 +297,94 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
   .js .rise, .js .reveal, .js .hero h1 .line > span, .js .proj .viz, .js .proj .proj-text > * { opacity: 1; transform: none; animation: none; transition: none; }
 }
 
-/* print: the page becomes the CV */
+/* ── mobile ── */
+.dock, .share-btn[hidden] { display: none; }
+.share-btn { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; color: inherit; text-decoration: underline; text-decoration-color: var(--muted); text-underline-offset: .22em; }
+.ripple { position: fixed; z-index: 999; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; border: 2px solid var(--hi); pointer-events: none; animation: ripple .6s var(--ease) forwards; }
+@keyframes ripple { to { transform: scale(5.5); opacity: 0; } }
+dialog.sheet { position: fixed; inset: auto 0 0 0; margin: 0; width: 100%; max-width: none; max-height: 86svh; border: 0; border-top: 1px solid var(--rule); border-radius: 22px 22px 0 0; padding: 0 var(--gutter) calc(22px + env(safe-area-inset-bottom)); background: var(--panel); box-shadow: 0 -20px 60px rgba(0,0,0,.5); overflow: auto; transform: translateY(var(--drag, 0px)); transition: transform .35s var(--ease); }
+dialog.sheet.dragging { transition: none; }
+dialog.sheet.closing { transform: translateY(105%); }
+dialog.sheet[open]:not(.closing) { animation: sheet-up .5s var(--ease); }
+@keyframes sheet-up { from { transform: translateY(100%); } }
+.sheet-top { touch-action: none; padding-top: 10px; cursor: grab; }
+.sheet-grab { width: 42px; height: 4px; border-radius: 2px; background: var(--muted); opacity: .5; margin: 0 auto 14px; }
+.sheet-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.sheet .ask { margin-top: 0; max-width: none; }
+.sheet .ask > label { display: none; }
+.sheet .ask-out { max-height: 40svh; overflow: auto; }
+
+@media (max-width: 899px) {
+  body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+  .totop { display: none; }
+
+  /* hero: photo first, edge to edge, name sliding over it */
+  .hero { padding-top: 0; }
+  .hero-grid { gap: 0; }
+  .hero-grid > div:first-child { display: contents; }
+  .portrait { order: 1; max-width: none; max-height: 74svh; margin: 0 calc(-1 * var(--gutter)); border-radius: 0; }
+  .portrait::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--bg) 3%, color-mix(in srgb, var(--bg) 55%, transparent) 26%, transparent 52%); pointer-events: none; }
+  .portrait img { transform: translate3d(0, var(--py, 0px), 0) scale(1.14); transform-origin: 50% 30%; will-change: transform; }
+  .portrait figcaption { top: 14px; bottom: auto; left: var(--gutter); }
+  .hero h1 { order: 2; position: relative; z-index: 2; margin-top: -2.1em; font-size: clamp(2.5rem, 11.6vw, 4.2rem); }
+  .eyebrow { order: 3; margin: 18px 0 0; }
+  .hero-copy { order: 4; }
+  .lead { margin-top: 12px; }
+  .hero .ask { display: none; }
+
+  /* projects: a deck of cards that stack as you scroll */
+  .proj { position: sticky; top: var(--stick, 72px); min-height: 0; padding: 26px 0 34px; background: var(--bg); border-top: 1px solid var(--rule); border-radius: 22px 22px 0 0; box-shadow: 0 -18px 40px rgba(0,0,0,.35); transform: scale(calc(1 - var(--cover, 0) * .07)); transform-origin: 50% 0; }
+  .proj::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #000; opacity: calc(var(--cover, 0) * .55); pointer-events: none; }
+  .proj-in { gap: 20px; }
+  .viz { aspect-ratio: 4 / 3; }
+  .proj h3 { margin-top: 8px; }
+  .proj .desc { margin-top: 12px; }
+  #work .more-wrap { position: relative; z-index: 1; background: var(--bg); padding-bottom: 8px; }
+
+  /* bottom tab bar */
+  .dock { display: grid; grid-template-columns: repeat(5, 1fr); align-items: end; position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); z-index: 45; height: 62px; padding: 0 4px 8px; background: color-mix(in srgb, var(--panel) 88%, transparent); -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4); border: 1px solid var(--rule); border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,.45); transition: transform .45s var(--ease), opacity .3s; }
+  .dock.away { transform: translateY(calc(100% + 24px)); opacity: 0; }
+  .dock a { display: grid; justify-items: center; gap: 3px; text-decoration: none; color: var(--muted); font-size: .64rem; font-weight: 600; letter-spacing: .02em; padding-top: 8px; -webkit-tap-highlight-color: transparent; transition: color .2s; }
+  .dock a span { white-space: nowrap; }
+  .dock svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s var(--ease); }
+  .dock a[aria-current="true"] { color: var(--hi-text); }
+  .dock a[aria-current="true"] svg { transform: translateY(-2px); }
+  .dock a:active svg { transform: scale(.88); }
+  .dock-ask { justify-self: center; align-self: start; width: 58px; height: 58px; margin-top: -22px; border-radius: 50%; border: 4px solid var(--bg); background: var(--hi); color: var(--hi-ink); display: grid; place-items: center; cursor: pointer; box-shadow: 0 8px 24px color-mix(in srgb, var(--hi) 35%, transparent); -webkit-tap-highlight-color: transparent; transition: transform .25s var(--ease); }
+  .dock-ask:active { transform: scale(.92); }
+  .dock-ask svg { width: 24px; height: 24px; stroke-width: 1.8; }
+}
+@media (max-width: 899px) and (prefers-reduced-motion: reduce) {
+  .proj { position: relative; top: 0; transform: none; }
+  .proj::after { display: none; }
+  .portrait img { transform: none; }
+}
+
+/* one-page CV, only used when printing */
+.cvp { display: none; }
 @media print {
-  @page { margin: 13mm; }
-  :root, :root[data-theme="dark"] { --paper: #fff; --paper-2: #fff; --ink: #000; --ink-2: #222; --muted: #555; --rule: #ccc; --accent: #000; --ok: #000; }
-  html { font-size: 9.5pt; }
-  body { background: #fff; }
-  .site-head, .menu-panel, .viz, .ask, .hero-actions, #writing, #contact, .totop, .cur, .cur-ring, .toast, .skip, .site-foot, dialog, .sec-head p, .paper > a, .eyebrow, .prose, #about .sec-head { display: none !important; }
-  .js .reveal, .js .rise, .js .hero h1 .line > span, .js .proj .viz, .js .proj .proj-text > * { opacity: 1 !important; transform: none !important; animation: none !important; transition: none !important; }
-  main { display: flex; flex-direction: column; }
-  .hero { order: 0; padding-top: 0; padding-bottom: 6pt; position: relative; }
-  #experience { order: 1; } #work { order: 2; } #research { order: 3; } #about { order: 4; }
-  .print-only { display: block; }
-  .print-contact { margin-top: 6pt; font: 400 8.5pt/1.4 var(--mono); }
-  .hero-grid { display: block; }
-  .hero h1 { font-size: 28pt; }
-  .lead { font-size: 12pt; max-width: 60ch; margin-top: 6pt; }
-  .now { margin-top: 6pt; }
-  .portrait { position: absolute; top: 0; right: 0; width: 72pt; border-radius: 6pt; }
-  .section { padding: 12pt 0; }
-  .sec-head { margin-bottom: 6pt; display: block; }
-  .sec-head h2 { font-size: 15pt; border-bottom: 1px solid #000; padding-bottom: 3pt; }
-  .proj { min-height: 0; padding: 5pt 0; border: 0; break-inside: avoid; display: block; }
-  .proj-in { display: block; }
-  .proj h3 { font-size: 13pt; margin-top: 2pt; }
-  .proj .desc { margin-top: 3pt; max-width: none; font-size: 9.5pt; }
-  .stack { margin-top: 2pt; }
-  .links { display: none; }
-  .more { padding-top: 6pt; border: 0; }
-  .paper-grid { display: block; }
-  .paper h3 { font-size: 13pt; margin: 3pt 0; }
-  .figs { margin: 6pt 0 0; }
-  .figs b { font-size: 15pt; }
-  .about-grid { display: block; }
-  .prose p { font-size: 10.5pt; }
-  .sub { margin: 10pt 0 4pt; }
-  .kv > div { padding: 3pt 0; grid-template-columns: 110pt 1fr; }
-  .job { grid-template-columns: 95pt 1fr; gap: 10pt; padding: 6pt 0; break-inside: avoid; }
-  .job ul { margin-top: 3pt; font-size: 9pt; }
-  .job li { margin-top: 1pt; }
-  a { text-decoration: none; }
+  @page { size: A4; margin: 11mm 12mm; }
+  :root, :root[data-theme="light"] { color-scheme: light; }
+  html, body { background: #fff !important; color: #111; }
+  body > :not(.cvp) { display: none !important; }
+  .cvp { display: block; font: 400 9.5pt/1.42 var(--sans); color: #111; }
+  .cvp a { color: #111; text-decoration: none; }
+  .cvp-head { display: grid; grid-template-columns: 66pt 1fr; gap: 14pt; align-items: center; padding-bottom: 10pt; border-bottom: 2pt solid #111; }
+  .cvp-head img { width: 66pt; height: 82pt; object-fit: cover; border-radius: 2pt; }
+  .cvp-head.no-photo { grid-template-columns: 1fr; }
+  .cvp h1 { font-size: 24pt; line-height: 1; font-weight: 850; font-stretch: 112%; text-transform: uppercase; }
+  .cvp .role { font-size: 11pt; font-weight: 600; margin-top: 4pt; }
+  .cvp .contact { margin-top: 3pt; color: #333; }
+  .cvp-cols { display: grid; grid-template-columns: 1.75fr 1fr; gap: 18pt; margin-top: 12pt; }
+  .cvp h2 { font-size: 8.8pt; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; border-bottom: .75pt solid #111; padding-bottom: 2.5pt; margin: 13pt 0 6pt; }
+  .cvp-cols > div > h2:first-child { margin-top: 0; }
+  .cvp .item { margin-bottom: 7pt; break-inside: avoid; }
+  .cvp .item-top { display: flex; justify-content: space-between; gap: 8pt; }
+  .cvp .item-top b { font-weight: 700; }
+  .cvp .item-top span { color: #555; white-space: nowrap; }
+  .cvp .item p { color: #222; }
+  .cvp .side p { margin-bottom: 4pt; }
+  .cvp .side b { font-weight: 700; }
 }
 </style>
 </head>
@@ -349,7 +393,7 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 
 <header class="site-head" id="top">
   <div class="wrap bar">
-    <a href="#top" class="brand">Gabriel Quaye</a>
+    <a href="#top" class="brand">Gabriel <i>Quaye</i></a>
     <nav aria-label="Primary">
       <ul class="nav">
         <li><a href="#work" data-i18n="nav_work">Work</a></li>
@@ -364,7 +408,7 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
       <button class="tool lang" id="langBtn" type="button" aria-label="Switch language / Changer de langue"><span data-l="en">EN</span>/<span data-l="fr">FR</span></button>
       <button class="tool" id="themeBtn" type="button">
         <svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" /><path d="M6 1a5 5 0 0 1 0 10z" fill="currentColor" /></svg>
-        <span id="themeLabel">Dark</span>
+        <span id="themeLabel">Light</span>
       </button>
       <button class="tool menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menuPanel" data-i18n="menu">Menu</button>
     </div>
@@ -384,21 +428,20 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
   <section class="hero wrap" aria-label="Introduction">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow rise"><span data-i18n="eyebrow">AI engineer · Tourcoing, France</span><span><span id="clock">--:--</span> <span data-i18n="local">local time</span></span></p>
-        <h1><span class="line"><span style="--d:.05s">Gabriel <em>Nii Attoh</em></span></span><span class="line"><span style="--d:.15s">Quaye</span></span></h1>
-        <p class="print-only print-contact">gabbyquaye2021@gmail.com · +33 7 45 49 37 15 · linkedin.com/in/gabriel-nii-attoh-quaye · github.com/links-astec · Tourcoing, France</p>
-        <div class="rise" style="--d:.35s">
-          <p class="lead" data-i18n="lead">I build machine-learning systems and the software that puts them in front of people.</p>
-          <p class="now"><span data-i18n="now">Currently a <b>Data / AI Engineer</b> (alternance) at <b>OXYA</b>, alongside my engineering degree at JUNIA ISEN.</span></p>
+        <p class="eyebrow label rise"><span data-i18n="eyebrow">AI engineer · Loos, France</span><span><span id="clock">--:--</span> <span data-i18n="local">local time</span></span></p>
+        <h1><span class="line"><span style="--d:.05s">Gabriel</span></span><span class="line"><span class="soft" style="--d:.12s">Nii Attoh</span></span><span class="line"><span style="--d:.19s">Quaye</span></span></h1>
+        <div class="hero-copy rise" style="--d:.35s">
+          <p class="lead" data-i18n="lead">I build AI tools and the apps around them.</p>
+          <p class="now"><span data-i18n="now"><b>Data / AI Engineer</b> (alternance) at <b>OXYA</b>. Studying AI at JUNIA ISEN.</span></p>
           <div class="hero-actions">
             <a class="btn" href="#work"><span data-i18n="cta_work">See my work</span> <span aria-hidden="true">↓</span></a>
             <button class="btn btn-ghost" type="button" data-cv><span data-i18n="cv">Download CV</span></button>
           </div>
         </div>
         <form class="ask rise" id="askForm" style="--d:.5s" autocomplete="off">
-          <label for="askInput" data-i18n="ask_label">Ask me something</label>
+          <label for="askInput" class="label" data-i18n="ask_label">Ask me something</label>
           <div class="ask-field">
-            <input id="askInput" type="text" enterkeyhint="send" data-i18n-ph="ask_ph" placeholder="e.g. What are you working on?" />
+            <input id="askInput" type="text" enterkeyhint="send" data-i18n-ph="ask_ph" placeholder="What are you working on?" />
             <button class="ask-go" type="submit" aria-label="Ask">→</button>
           </div>
           <div class="ask-sugg" id="askSugg"></div>
@@ -406,7 +449,8 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
         </form>
       </div>
       <figure class="portrait rise" style="--d:.25s">
-        <img src="me.jpg" alt="Portrait of Gabriel Nii Attoh Quaye" width="800" height="1000" decoding="async" onerror="this.closest('.hero').classList.add('no-photo'); this.parentNode.remove();" />
+        <img src="me.jpg" alt="Gabriel Nii Attoh Quaye" width="640" height="800" decoding="async" onerror="this.closest('.hero').classList.add('no-photo'); this.parentNode.remove();" />
+        <figcaption>Loos, France</figcaption>
       </figure>
     </div>
   </section>
@@ -414,18 +458,31 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
   <section class="section" id="work">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2 data-i18n="work_h">Selected work</h2>
-        <p data-i18n="work_p">Eight projects I'd walk you through first. Move your mouse over the animations — most of them react.</p>
+        <h2><span data-i18n="work_h">Work</span><sup>08</sup></h2>
+        <p data-i18n="work_p">Things I've built. Hover the animations, most of them react.</p>
       </div>
     </div>
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="strike" role="img" aria-label="Animation: job listings from five platforms being scored, each getting a go, risky or skip verdict"></canvas><figcaption data-i18n="v1">scoring live listings</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="ats" role="img" aria-label="Animation: a CV is checked against a job offer while a match score fills up"></canvas><figcaption data-i18n="v1">CV vs. job offer</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>01</b><span data-i18n="k1">Hackathon build · 2026</span></p>
+          <p class="kicker label"><b>01</b><span data-i18n="k1">Live product · 2026</span></p>
+          <h3>CVMaster</h3>
+          <p class="desc" data-i18n="d1">An AI CV builder, live with Stripe payments. Write or upload your CV, tailor it to a job offer, check it against ATS filters, and export one clean A4 page.</p>
+          <p class="stack">Vue 3 · Express · PostgreSQL · Groq · Puppeteer · Stripe</p>
+          <p class="links"><a href="https://www.cvmaster.live" target="_blank" rel="noopener"><span class="live-dot"></span>cvmaster.live ↗</a><a href="https://github.com/links-astec/CV-master" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="wrap proj-in">
+        <figure class="viz" data-cursor="explore"><canvas data-viz="strike" role="img" aria-label="Animation: job listings from five sites get scored go, risky or skip"></canvas><figcaption data-i18n="v2">scoring live listings</figcaption></figure>
+        <div class="proj-text">
+          <p class="kicker label"><b>02</b><span data-i18n="k2">Hackathon · 2026</span></p>
           <h3>Strikebase</h3>
-          <p class="desc" data-i18n="d1">Tells freelancers which jobs are worth bidding on. It pulls live listings from five platforms, reads each client's history through Bright Data, and has Claude score every job from 0 to 100 with a plain verdict: go, risky or skip.</p>
+          <p class="desc" data-i18n="d2">Shows freelancers which jobs are worth bidding on. It reads live listings from five sites and Claude scores each one from 0 to 100.</p>
           <p class="stack">Next.js · FastAPI · Supabase · Bright Data · Claude</p>
           <p class="links"><a href="https://strikebase.vercel.app/?demo=true" target="_blank" rel="noopener"><span data-i18n="l_live">Live demo</span> ↗</a><a href="https://github.com/links-astec/Strikebase" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
         </div>
@@ -434,37 +491,37 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="rag" role="img" aria-label="Animation: a question flows through plan, retrieve, tools and a language model to an answer"></canvas><figcaption data-i18n="v2">question → plan → search → answer</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="rag" role="img" aria-label="Animation: a question goes through plan, search, tools and a language model to an answer"></canvas><figcaption data-i18n="v3">question → plan → search → answer</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>02</b><span data-i18n="k2">Retrieval · 2026</span></p>
+          <p class="kicker label"><b>03</b><span data-i18n="k3">Retrieval · 2026</span></p>
           <h3>RAG Agentic Pipeline</h3>
-          <p class="desc" data-i18n="d2">An agent that decides for itself when to search, what to search for and when it knows enough. Built with LangGraph, Llama 3.3 on Groq and PGVector — one of five retrieval projects I used to compare simple, hybrid and agentic approaches.</p>
-          <p class="stack">LangGraph · Groq · PGVector · PostgreSQL · GCP</p>
-          <p class="links"><a href="https://github.com/links-astec/rag-agentic-pipeline" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a><a href="https://github.com/links-astec/rag-gcp-deployment" target="_blank" rel="noopener"><span data-i18n="l_gcp">GCP deployment</span> ↗</a></p>
+          <p class="desc" data-i18n="d3">An agent that decides when to search and what to look for before it answers. One of five RAG projects I built to compare approaches.</p>
+          <p class="stack">LangGraph · Groq · PGVector · GCP</p>
+          <p class="links"><a href="https://github.com/links-astec/rag-agentic-pipeline" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
         </div>
       </div>
     </article>
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="jarvis" role="img" aria-label="Animation: a spoken command goes through wake word, whisper.cpp, llama.cpp and a Windows action"></canvas><figcaption data-i18n="v3">wake → listen → think → act</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="jarvis" role="img" aria-label="Animation: a spoken command goes from wake word to transcription, language model and action"></canvas><figcaption data-i18n="v4">wake → listen → think → act</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>03</b><span data-i18n="k3">Voice assistant · 2026</span></p>
+          <p class="kicker label"><b>04</b><span data-i18n="k4">Voice assistant · 2026</span></p>
           <h3>Jarvis</h3>
-          <p class="desc" data-i18n="d3">A voice assistant that runs entirely on my laptop — no internet, no cloud. I prototyped it in Python, then rewrote it in C++ with whisper.cpp and llama.cpp so it ships as one program that opens apps, controls music and arranges windows.</p>
+          <p class="desc" data-i18n="d4">A voice assistant that runs fully offline on my laptop. I wrote it in Python first, then rebuilt it in C++ as a single program.</p>
           <p class="stack">C++17 · whisper.cpp · llama.cpp · Win32</p>
-          <p class="links"><a href="https://github.com/links-astec/Jarvis-cpp" target="_blank" rel="noopener"><span data-i18n="l_cpp">C++ version</span> ↗</a><a href="https://github.com/links-astec/Jarvis-python" target="_blank" rel="noopener"><span data-i18n="l_proto">Python prototype</span> ↗</a></p>
+          <p class="links"><a href="https://github.com/links-astec/Jarvis-cpp" target="_blank" rel="noopener"><span data-i18n="l_cpp">C++ version</span> ↗</a><a href="https://github.com/links-astec/Jarvis-python" target="_blank" rel="noopener"><span data-i18n="l_proto">Python version</span> ↗</a></p>
         </div>
       </div>
     </article>
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="scan" role="img" aria-label="Animation: a 3 by 3 filter sweeps a scan and highlights the region it reacts to"></canvas><figcaption data-i18n="v4">move over the scan to inspect it</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="scan" role="img" aria-label="Animation: a small filter sweeps a scan and highlights the area it reacts to"></canvas><figcaption data-i18n="v5">hover the scan to inspect it</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>04</b><span data-i18n="k4">Medical imaging</span></p>
-          <h3 data-i18n="n4">Breast Cancer Detection</h3>
-          <p class="desc" data-i18n="d4">A convolutional network that classifies MRI scans with over 90% accuracy — checked with ROC-AUC and F1 rather than accuracy alone — and served through a small Flask API you can try online.</p>
+          <p class="kicker label"><b>05</b><span data-i18n="k5">Medical imaging</span></p>
+          <h3 data-i18n="n5">Breast Cancer Detection</h3>
+          <p class="desc" data-i18n="d5">A CNN that classifies breast MRI scans with over 90% accuracy. You can try it online.</p>
           <p class="stack">TensorFlow · Keras · Flask</p>
           <p class="links"><a href="http://gabbyquaye.pythonanywhere.com" target="_blank" rel="noopener"><span data-i18n="l_live">Live demo</span> ↗</a><a href="https://github.com/links-astec/Breast_Cancer" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
         </div>
@@ -473,12 +530,12 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="voice" role="img" aria-label="Animation: a speech waveform with French phrases and their English translations"></canvas><figcaption data-i18n="v5">hover the waveform</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="voice" role="img" aria-label="Animation: a speech waveform with French phrases and their English translations"></canvas><figcaption data-i18n="v6">hover the waveform</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>05</b><span data-i18n="k5">Language learning</span></p>
+          <p class="kicker label"><b>06</b><span data-i18n="k6">Language learning</span></p>
           <h3>VocalLingua</h3>
-          <p class="desc" data-i18n="d5">A language-learning app with an AI tutor that answers in context. Next.js on the front, a Django REST API with 15+ endpoints behind it, PostgreSQL and Docker, deployed automatically to Vercel.</p>
-          <p class="stack">Next.js · Django · PostgreSQL · Docker · OpenAI</p>
+          <p class="desc" data-i18n="d6">A language app with an AI tutor. Next.js front end, Django API, deployed on Vercel.</p>
+          <p class="stack">Next.js · Django · PostgreSQL · Docker</p>
           <p class="links"><a href="https://gabsther-sand.vercel.app" target="_blank" rel="noopener"><span data-i18n="l_live">Live demo</span> ↗</a><a href="https://github.com/links-astec/Gabsther" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
         </div>
       </div>
@@ -486,24 +543,11 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="ats" role="img" aria-label="Animation: a CV is matched against job keywords while a score ring fills"></canvas><figcaption data-i18n="v6">CV vs. job description</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="gan" role="img" aria-label="Animation: fake data points slowly take the shape of the real data"></canvas><figcaption data-i18n="v7">fake points learning the real shape</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>06</b><span data-i18n="k6">Job search</span></p>
-          <h3>G Careers</h3>
-          <p class="desc" data-i18n="d6">A job-search companion: it scores your CV against a job description, runs mock interviews with feedback, and keeps track of applications and revision topics.</p>
-          <p class="stack">Next.js · Groq · Tavily</p>
-          <p class="links"><a href="https://career-app-ivory.vercel.app" target="_blank" rel="noopener"><span data-i18n="l_live">Live demo</span> ↗</a><a href="https://github.com/links-astec/Career_app" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
-        </div>
-      </div>
-    </article>
-
-    <article class="proj">
-      <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="gan" role="img" aria-label="Animation: synthetic data points gradually move to match the shape of the real data"></canvas><figcaption data-i18n="v7">synthetic points learning the real shape</figcaption></figure>
-        <div class="proj-text">
-          <p class="kicker"><b>07</b><span data-i18n="k7">Privacy &amp; data</span></p>
+          <p class="kicker label"><b>07</b><span data-i18n="k7">Data</span></p>
           <h3 data-i18n="n7">Synthetic Medical Data</h3>
-          <p class="desc" data-i18n="d7">Patient data is hard to share, so this pipeline uses a CTGAN to generate realistic synthetic records — then checks them by training on the fake data and testing on the real thing.</p>
+          <p class="desc" data-i18n="d7">Generates fake patient records that behave like real ones, so data can be shared without exposing anyone.</p>
           <p class="stack">Python · CTGAN</p>
           <p class="links"><a href="https://github.com/links-astec/synthetic-medical-data-gan" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
         </div>
@@ -512,40 +556,40 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 
     <article class="proj">
       <div class="wrap proj-in">
-        <figure class="viz" data-cursor="explore"><canvas data-viz="rl" role="img" aria-label="Animation: an agent learns, episode by episode, to dodge obstacles across three lanes"></canvas><figcaption data-i18n="v8">watch it get better</figcaption></figure>
+        <figure class="viz" data-cursor="explore"><canvas data-viz="rl" role="img" aria-label="Animation: an agent learns, episode by episode, to dodge obstacles"></canvas><figcaption data-i18n="v8">watch it get better</figcaption></figure>
         <div class="proj-text">
-          <p class="kicker"><b>08</b><span data-i18n="k8">Reinforcement learning</span></p>
+          <p class="kicker label"><b>08</b><span data-i18n="k8">Reinforcement learning</span></p>
           <h3>Obstacle Dodge Runner</h3>
-          <p class="desc" data-i18n="d8">A small game where an agent learns to dodge obstacles from reward alone — no rules written by hand, just trial, error and a score.</p>
+          <p class="desc" data-i18n="d8">A small game where an agent learns to dodge obstacles by trial and error.</p>
           <p class="stack">C#</p>
           <p class="links"><a href="https://github.com/links-astec/RL_Obstacle_Dodge_Runner" target="_blank" rel="noopener"><span data-i18n="l_code">Source code</span> ↗</a></p>
         </div>
       </div>
     </article>
 
-    <div class="wrap"><p class="more reveal"><span data-i18n="more">Twelve more — an NLP model comparer, a multi-agent framework, an HTTP server written in C, a device trade-in grader and several web apps —</span> <a href="https://github.com/links-astec" target="_blank" rel="noopener" data-i18n="more_link">are on GitHub ↗</a></p></div>
+    <div class="wrap more-wrap"><p class="more reveal"><span data-i18n="more">More on GitHub: G Careers, an NLP model comparer, a multi-agent framework, an HTTP server in C and others.</span> <a href="https://github.com/links-astec" target="_blank" rel="noopener" data-i18n="more_link">github.com/links-astec ↗</a></p></div>
   </section>
 
   <section class="section" id="research">
     <div class="wrap">
       <div class="sec-head reveal">
         <h2 data-i18n="research_h">Research</h2>
-        <p data-i18n="research_p">My first paper, from my time at KNUST: a heart-disease screening model small enough to run on a microcontroller.</p>
+        <p data-i18n="research_p">Published in 2023, during my BSc at KNUST.</p>
       </div>
       <div class="paper-grid">
         <article class="paper reveal">
-          <p class="cite" data-i18n="res_cite">Journal article · IJSET Vol. 11, Issue 6 · 2023</p>
+          <p class="label" data-i18n="res_cite">IJSET Vol. 11, Issue 6 · 2023</p>
           <h3 data-i18n="res_title">Design of a TinyML-Based Predictive Heart Disease Screening Device</h3>
-          <p class="authors">Acquah Andrews, <b>Quaye Nii Attoh Gabriel</b> — <span data-i18n="res_affil">Computer Engineering, KNUST</span></p>
-          <p class="abstract" data-i18n="res_abstract">A shallow neural network on an Arduino Nano 33 BLE Sense predicts heart failure from eight clinical features. It runs entirely on the device — no internet connection — which makes it usable in clinics with limited infrastructure.</p>
+          <p class="authors">Acquah Andrews, <b>Quaye Nii Attoh Gabriel</b> · KNUST</p>
+          <p class="abstract" data-i18n="res_abstract">A small neural network on an Arduino that screens for heart failure from eight clinical measurements. It works without internet.</p>
           <div class="figs">
             <div><b data-i18n="fig1">82.61%</b><span data-i18n="fig1_l">accuracy</span></div>
             <div><b data-i18n="fig2">92.15%</b><span>ROC-AUC</span></div>
-            <div><b>8</b><span data-i18n="fig3_l">clinical features</span></div>
+            <div><b>8</b><span data-i18n="fig3_l">measurements</span></div>
           </div>
           <a href="https://www.ijset.in/wp-content/uploads/IJSET_V11_issue6_608.pdf" target="_blank" rel="noopener"><span data-i18n="res_read">Read the paper (PDF)</span> ↗</a>
         </article>
-        <figure class="viz reveal" data-cursor="explore"><canvas data-viz="heart" role="img" aria-label="Animation: a heartbeat trace feeds a small neural network running on a microcontroller"></canvas><figcaption data-i18n="v9">running on the device</figcaption></figure>
+        <figure class="viz reveal" data-cursor="explore"><canvas data-viz="heart" role="img" aria-label="Animation: a heartbeat feeds a small neural network running on a microcontroller"></canvas><figcaption data-i18n="v9">running on the device</figcaption></figure>
       </div>
     </div>
   </section>
@@ -555,21 +599,20 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
       <div class="sec-head reveal"><h2 data-i18n="about_h">About</h2></div>
       <div class="about-grid">
         <div class="prose reveal">
-          <p data-i18n="about_p1">I'm an AI engineer from Ghana, living in Tourcoing, France. I'm doing an engineering degree in Artificial Intelligence at JUNIA ISEN, and most of my work sits where models meet products: retrieval systems, LLM evaluation, and the APIs and interfaces around them.</p>
-          <p data-i18n="about_p2">Since September 2026 I've been a data / AI engineer in alternance at OXYA. Before that I spent the summer as a research intern at Sheffield Hallam University working on LLM security, and two years as CTO of GLINAX in Ghana.</p>
-          <p data-i18n="about_p3">I care about the unglamorous parts — chunking, evaluation, deployment — because that's usually where a model succeeds or fails.</p>
+          <p data-i18n="about_p1">I'm from Ghana and I live in Loos, near Lille. I study AI at JUNIA ISEN and work as a data / AI engineer at OXYA.</p>
+          <p data-i18n="about_p2">Before that I did an AI research internship at Sheffield Hallam University and spent two years as CTO of GLINAX in Ghana. In my free time I build products like CVMaster.</p>
         </div>
         <div class="reveal">
-          <h3 class="sub" data-i18n="tk_h">What I work with</h3>
+          <h3 class="sub label" data-i18n="tk_h">Tools</h3>
           <dl class="kv">
             <div><dt data-i18n="tk_lang">Languages</dt><dd>Python, TypeScript, Java, C / C++, C#</dd></div>
-            <div><dt data-i18n="tk_ml">Machine learning</dt><dd>TensorFlow, Keras, PyTorch, Hugging Face, CTGAN, TinyML</dd></div>
-            <div><dt data-i18n="tk_llm">LLMs</dt><dd>LangGraph, Groq, PGVector, whisper.cpp, llama.cpp</dd></div>
-            <div><dt data-i18n="tk_web">Web</dt><dd>React, Next.js, Vue, Django, FastAPI, Flask</dd></div>
-            <div><dt data-i18n="tk_infra">Data &amp; infra</dt><dd>PostgreSQL, Supabase, Docker, CI/CD, GCP</dd></div>
-            <div><dt data-i18n="tk_spoken">Spoken</dt><dd data-i18n="tk_spoken_v">English, French</dd></div>
+            <div><dt data-i18n="tk_ml">Machine learning</dt><dd>TensorFlow, PyTorch, Hugging Face, TinyML</dd></div>
+            <div><dt data-i18n="tk_llm">LLMs</dt><dd>LangGraph, Groq, PGVector, llama.cpp</dd></div>
+            <div><dt data-i18n="tk_web">Web</dt><dd>React, Next.js, Vue, Django, FastAPI, Express</dd></div>
+            <div><dt data-i18n="tk_infra">Data &amp; infra</dt><dd>PostgreSQL, Docker, GCP, Vercel, Render</dd></div>
+            <div><dt data-i18n="tk_spoken">Speaks</dt><dd data-i18n="tk_spoken_v">English, French</dd></div>
           </dl>
-          <h3 class="sub" data-i18n="certs_h">Certifications</h3>
+          <h3 class="sub label" data-i18n="certs_h">Certifications</h3>
           <dl class="kv">
             <div><dt>Google, 2023</dt><dd>Google AI Essentials</dd></div>
             <div><dt>Google, 2023</dt><dd>Crowdsource AI Certification</dd></div>
@@ -586,69 +629,28 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
       <div class="sec-head reveal"><h2 data-i18n="exp_h">Experience</h2></div>
       <ol class="jobs">
         <li class="job reveal">
-          <span class="when" data-i18n="e1_when">Sept 2026 – now</span>
-          <div>
-            <h3 data-i18n="e1_role">Data / AI Engineer — alternance</h3>
-            <p class="org">OXYA</p>
-            <ul><li data-i18n="e1_b1">Work-study placement alongside the final years of the JUNIA ISEN engineering programme.</li></ul>
-          </div>
+          <span class="when" data-i18n="e1_when">Sept 2026 to now</span>
+          <div><h3 data-i18n="e1_role">Data / AI Engineer (alternance)</h3><p class="org">OXYA</p><p class="what" data-i18n="e1_b">Data and AI engineering, alongside my studies at JUNIA ISEN.</p></div>
         </li>
         <li class="job reveal">
-          <span class="when" data-i18n="e2_when">May – Aug 2026</span>
-          <div>
-            <h3 data-i18n="e2_role">AI Research Intern — LLM Security &amp; NLP</h3>
-            <p class="org" data-i18n="e2_org">Sheffield Hallam University · Sheffield, UK</p>
-            <ul>
-              <li data-i18n="e2_b1">Built Python NLP pipelines for LLM security research: data processing, classification, information extraction and evaluation of model outputs</li>
-              <li data-i18n="e2_b2">Measured and improved LLM behaviour: hallucination reduction, bias analysis, guard-rails and systematic error analysis</li>
-              <li data-i18n="e2_b3">Designed and tuned prompt templates; presented findings to a multidisciplinary team and business stakeholders</li>
-            </ul>
-          </div>
+          <span class="when" data-i18n="e2_when">May to Aug 2026</span>
+          <div><h3 data-i18n="e2_role">AI Research Intern</h3><p class="org" data-i18n="e2_org">Sheffield Hallam University, UK</p><p class="what" data-i18n="e2_b">Built NLP pipelines to test LLMs for hallucinations, bias and safety issues. Wrote and tuned prompts and presented the results to the team.</p></div>
         </li>
         <li class="job reveal">
           <span class="when">2025 – 2027</span>
-          <div>
-            <h3 data-i18n="e3_role">Engineering degree — Artificial Intelligence</h3>
-            <p class="org">JUNIA ISEN · Lille, France</p>
-            <ul>
-              <li data-i18n="e3_b1">Machine learning, agentic AI, NLP, computer vision, data science, software engineering</li>
-              <li data-i18n="e3_b2">Titre d'Ingénieur RNCP39145 — Level 7 (Bac+5), equivalent to a Master's degree</li>
-            </ul>
-          </div>
-        </li>
-        <li class="job reveal">
-          <span class="when" data-i18n="e4_when">Oct 2024</span>
-          <div>
-            <h3 data-i18n="e4_role">IT Intern</h3>
-            <p class="org">Ghana Civil Aviation Authority (GCAA) · Ghana</p>
-            <ul>
-              <li data-i18n="e4_b1">Network maintenance and troubleshooting in a critical enterprise Linux environment</li>
-              <li data-i18n="e4_b2">System and hardware configuration — software updates, user accounts, security audits and access checks</li>
-            </ul>
-          </div>
+          <div><h3 data-i18n="e3_role">Engineering degree in AI</h3><p class="org">JUNIA ISEN, Lille</p><p class="what" data-i18n="e3_b">Machine learning, NLP, computer vision and data science. Master's level (RNCP Level 7).</p></div>
         </li>
         <li class="job reveal">
           <span class="when">2023 – 2025</span>
-          <div>
-            <h3 data-i18n="e5_role">Chief Technology Officer</h3>
-            <p class="org">GLINAX · Ghana</p>
-            <ul>
-              <li data-i18n="e5_b1">Led development of an AI study assistant for students, delivered as a Telegram bot and a full-stack web app (Gabsther)</li>
-              <li data-i18n="e5_b2">Ran hands-on AI and robotics workshops for students, and set the company's technical direction</li>
-              <li data-i18n="e5_b3">Owned the product lifecycle across several projects, from idea to deployment and iteration</li>
-            </ul>
-          </div>
+          <div><h3 data-i18n="e4_role">CTO</h3><p class="org">GLINAX, Ghana</p><p class="what" data-i18n="e4_b">Led an AI study assistant for students (Telegram bot and web app) and ran AI and robotics workshops.</p></div>
+        </li>
+        <li class="job reveal">
+          <span class="when" data-i18n="e5_when">Oct 2024</span>
+          <div><h3 data-i18n="e5_role">IT Intern</h3><p class="org">Ghana Civil Aviation Authority</p><p class="what" data-i18n="e5_b">Network maintenance, system setup and security checks on Linux machines.</p></div>
         </li>
         <li class="job reveal">
           <span class="when">2021 – 2025</span>
-          <div>
-            <h3 data-i18n="e6_role">BSc Computer Engineering</h3>
-            <p class="org" data-i18n="e6_org">Kwame Nkrumah University of Science and Technology · Kumasi, Ghana</p>
-            <ul>
-              <li data-i18n="e6_b1">Data structures &amp; algorithms, embedded systems, networking &amp; security, mathematics, C/C++</li>
-              <li data-i18n="e6_b2">Published TinyML research on heart-disease screening (IJSET, 2023)</li>
-            </ul>
-          </div>
+          <div><h3 data-i18n="e6_role">BSc Computer Engineering</h3><p class="org">KNUST, Ghana</p><p class="what" data-i18n="e6_b">Algorithms, embedded systems, networks and security. Published TinyML research in 2023.</p></div>
         </li>
       </ol>
     </div>
@@ -663,11 +665,11 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
         <!-- Editor: visible at #admin. Posts saved here stay in this browser; "Copy as code" gives the snippet to publish. -->
         <div class="admin" id="admin" hidden>
           <div id="adminGate">
-            <p class="sub">Editor</p>
+            <p class="sub label">Editor</p>
             <div class="admin-row"><input id="adminPw" type="password" placeholder="Password" autocomplete="current-password" /><button class="tool" id="adminUnlock" type="button">Unlock</button></div>
           </div>
           <div class="composer" id="composer" hidden>
-            <p class="sub">New post</p>
+            <p class="sub label">New post</p>
             <div class="admin-row"><input id="cpTitle" placeholder="Title" /><input id="cpTag" placeholder="Tag (e.g. Engineering)" /></div>
             <textarea id="cpBody" placeholder="Write here. Blank line = new paragraph. Start a line with ## for a subheading."></textarea>
             <div class="admin-row">
@@ -685,25 +687,26 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
   <section class="section" id="contact">
     <div class="wrap contact-grid reveal">
       <div>
-        <p class="contact-big" data-i18n="contact_big">Say hello.</p>
+        <p class="contact-big" data-i18n="contact_big">Get in touch</p>
         <div class="email-row">
           <a class="email" href="mailto:gabbyquaye2021@gmail.com" data-cursor="write">gabbyquaye2021@gmail.com</a>
           <button class="tool" id="copyEmail" type="button" data-i18n="copy">Copy</button>
         </div>
-        <p class="contact-p" data-i18n="contact_p">I'm in alternance at OXYA, but always glad to hear about research collaborations, interesting problems, or anything you read here.</p>
+        <p class="contact-p" data-i18n="contact_p">Email is the fastest way to reach me. Happy to talk about AI projects, research or anything you saw here.</p>
         <ul class="contact-links">
           <li><a href="https://linkedin.com/in/gabriel-nii-attoh-quaye" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           <li><a href="https://github.com/links-astec" target="_blank" rel="noopener">GitHub ↗</a></li>
           <li><a href="tel:+33745493715">+33 7 45 49 37 15</a></li>
+          <li><button class="share-btn" id="shareBtn" type="button" hidden><span data-i18n="share">Share this page</span> ↗</button></li>
         </ul>
       </div>
       <form class="contact-form" id="contactForm" novalidate>
-        <div class="field"><label for="cName" data-i18n="form_name">Your name</label><input id="cName" autocomplete="name" /><span class="err" data-err="cName"></span></div>
-        <div class="field"><label for="cEmail" data-i18n="form_email">Email</label><input id="cEmail" type="email" autocomplete="email" /><span class="err" data-err="cEmail"></span></div>
-        <div class="field"><label for="cMsg" data-i18n="form_msg">Message</label><textarea id="cMsg" rows="5"></textarea><span class="err" data-err="cMsg"></span></div>
+        <div class="field"><label for="cName" class="label" data-i18n="form_name">Your name</label><input id="cName" autocomplete="name" /><span class="err" data-err="cName"></span></div>
+        <div class="field"><label for="cEmail" class="label" data-i18n="form_email">Email</label><input id="cEmail" type="email" autocomplete="email" /><span class="err" data-err="cEmail"></span></div>
+        <div class="field"><label for="cMsg" class="label" data-i18n="form_msg">Message</label><textarea id="cMsg" rows="5"></textarea><span class="err" data-err="cMsg"></span></div>
         <div class="form-foot">
-          <button class="btn" type="submit"><span data-i18n="form_send">Send message</span> <span aria-hidden="true">→</span></button>
-          <span data-i18n="form_hint">Opens your email app, pre-filled</span>
+          <button class="btn" type="submit"><span data-i18n="form_send">Send</span> <span aria-hidden="true">→</span></button>
+          <span data-i18n="form_hint">Opens your email app</span>
         </div>
       </form>
     </div>
@@ -729,8 +732,71 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
   </article>
 </dialog>
 
+<!-- Mobile only: bottom tab bar and the "Ask" sheet -->
+<nav class="dock" id="dock" aria-label="Quick navigation">
+  <a href="#work"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg><span data-i18n="nav_work">Work</span></a>
+  <a href="#research"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20.5H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-i18n="nav_research">Research</span></a>
+  <button class="dock-ask" id="dockAsk" type="button" aria-label="Ask me something"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v10H10l-4.5 3.5v-3.5H4z"/><path d="M10.2 9a1.9 1.9 0 1 1 2.6 1.8c-.5.2-.8.6-.8 1.1M12 13.6v.1"/></svg></button>
+  <a href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/></svg><span data-i18n="nav_about">About</span></a>
+  <a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4 6.5 8 6.5 8-6.5"/></svg><span data-i18n="nav_contact">Contact</span></a>
+</nav>
+
+<dialog class="sheet" id="askSheet" aria-labelledby="sheetTitle">
+  <div class="sheet-top" id="sheetTop">
+    <div class="sheet-grab" aria-hidden="true"></div>
+    <div class="sheet-head"><p class="label" id="sheetTitle" data-i18n="ask_label">Ask me something</p><button class="tool" id="sheetClose" type="button" data-i18n="close">Close</button></div>
+  </div>
+  <div class="sheet-body" id="sheetBody"></div>
+</dialog>
+
+<!-- One-page CV: hidden on screen, it is what prints when someone clicks "Download CV". -->
+<section class="cvp" aria-hidden="true">
+  <header class="cvp-head">
+    <img src="me-cv.jpg" alt="" onerror="this.parentNode.classList.add('no-photo'); this.remove();" />
+    <div>
+      <h1>Gabriel Nii Attoh Quaye</h1>
+      <p class="role" data-i18n="cv_role">Data / AI Engineer (alternance) at OXYA · AI engineering student at JUNIA ISEN</p>
+      <p class="contact">gabbyquaye2021@gmail.com · +33 7 45 49 37 15 · Loos, France · linkedin.com/in/gabriel-nii-attoh-quaye · github.com/links-astec</p>
+    </div>
+  </header>
+  <div class="cvp-cols">
+    <div>
+      <h2 data-i18n="cv_profile">Profile</h2>
+      <p data-i18n="cv_profile_t">AI engineer who builds machine-learning systems and the apps around them: retrieval pipelines, LLM evaluation, medical models and live AI products such as cvmaster.live.</p>
+      <h2 data-i18n="cv_exp">Experience</h2>
+      <div class="item"><div class="item-top"><b data-i18n="cv_e1">Data / AI Engineer (alternance), OXYA</b><span data-i18n="cv_e1d">Sept 2026 to now</span></div><p data-i18n="cv_e1t">Data and AI engineering, alongside the JUNIA ISEN engineering degree.</p></div>
+      <div class="item"><div class="item-top"><b data-i18n="cv_e2">AI Research Intern, Sheffield Hallam University (UK)</b><span data-i18n="cv_e2d">May to Aug 2026</span></div><p data-i18n="cv_e2t">Built Python NLP pipelines to test LLMs for hallucinations, bias and safety issues. Tuned prompts and presented results to the team.</p></div>
+      <div class="item"><div class="item-top"><b data-i18n="cv_e3">CTO, GLINAX (Ghana)</b><span>2023 – 2025</span></div><p data-i18n="cv_e3t">Led an AI study assistant for students (Telegram bot and web app). Ran AI and robotics workshops.</p></div>
+      <div class="item"><div class="item-top"><b data-i18n="cv_e4">IT Intern, Ghana Civil Aviation Authority</b><span data-i18n="cv_e4d">Oct 2024</span></div><p data-i18n="cv_e4t">Network maintenance, system setup and security checks on Linux.</p></div>
+      <h2 data-i18n="cv_proj">Projects</h2>
+      <div class="item"><div class="item-top"><b>CVMaster · cvmaster.live</b><span>Vue, Express, PostgreSQL, Groq</span></div><p data-i18n="cv_p1">Live AI CV builder with Stripe payments: tailors a CV to a job offer, checks it against ATS filters, exports one A4 page.</p></div>
+      <div class="item"><div class="item-top"><b>Strikebase</b><span>Next.js, FastAPI, Claude</span></div><p data-i18n="cv_p2">Hackathon project that scores freelance jobs from five sites, 0 to 100.</p></div>
+      <div class="item"><div class="item-top"><b>RAG Agentic Pipeline</b><span>LangGraph, Groq, PGVector</span></div><p data-i18n="cv_p3">Agent that decides when and what to search. One of five RAG projects.</p></div>
+      <div class="item"><div class="item-top"><b>Jarvis</b><span>C++, whisper.cpp, llama.cpp</span></div><p data-i18n="cv_p4">Offline voice assistant, rebuilt from Python into a single C++ program.</p></div>
+      <div class="item"><div class="item-top"><b data-i18n="cv_p5n">Breast Cancer Detection</b><span>TensorFlow, Flask</span></div><p data-i18n="cv_p5">CNN that classifies breast MRI scans with over 90% accuracy, served online.</p></div>
+    </div>
+    <div class="side">
+      <h2 data-i18n="cv_edu">Education</h2>
+      <div class="item"><div class="item-top"><b>JUNIA ISEN, Lille</b><span>2025 – 2027</span></div><p data-i18n="cv_edu1">Engineering degree in AI (Master's level, RNCP 7)</p></div>
+      <div class="item"><div class="item-top"><b>KNUST, Ghana</b><span>2021 – 2025</span></div><p data-i18n="cv_edu2">BSc Computer Engineering</p></div>
+      <h2 data-i18n="cv_pub">Publication</h2>
+      <p data-i18n="cv_pub_t">TinyML heart-disease screening device. IJSET Vol. 11, Issue 6, 2023. 82.61% accuracy, 92.15% ROC-AUC.</p>
+      <h2 data-i18n="cv_skills">Skills</h2>
+      <p><b data-i18n="cv_s1">Languages:</b> Python, TypeScript, C / C++, Java, C#</p>
+      <p><b>ML:</b> TensorFlow, PyTorch, Hugging Face, TinyML</p>
+      <p><b>LLM:</b> LangGraph, Groq, PGVector, RAG, llama.cpp</p>
+      <p><b>Web:</b> React, Next.js, Vue, Django, FastAPI, Express</p>
+      <p><b data-i18n="cv_s5">Data / infra:</b> PostgreSQL, Docker, GCP, Vercel</p>
+      <h2 data-i18n="cv_lang">Languages</h2>
+      <p data-i18n="cv_lang_t">English, French</p>
+      <h2 data-i18n="cv_cert">Certifications</h2>
+      <p>Google AI Essentials (2023)<br />Crowdsource AI, Google (2023)<br />AI Essentials, ALX Africa (2023)<br /><span data-i18n="cv_cert4">Networking &amp; Security, KNUST (2024)</span></p>
+    </div>
+  </div>
+</section>
+
 <script>
-/* Set to a hosted PDF (e.g. 'cv.pdf') to download it directly; empty = print this page as a CV. */
+/* Set to a hosted PDF (e.g. 'cv.pdf') to download it directly; empty = print the one-page CV built into this page. */
 const CV_URL = '';
 const ADMIN_PW = 'gnq2026';
 const EMAIL = 'gabbyquaye2021@gmail.com';
@@ -746,71 +812,76 @@ const store = {
 };
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const buzz = () => { try { if (navigator.vibrate) navigator.vibrate(8); } catch (e) {} };
+const mqMobile = matchMedia('(max-width: 899px)');
 
 /* ── i18n: English is read from the markup, French lives here (trusted strings, may contain <b>) ── */
 const fr = {
   skip: 'Aller au contenu', menu: 'Menu', close: 'Fermer', next: 'Article suivant',
   nav_work: 'Projets', nav_research: 'Recherche', nav_about: 'À propos', nav_exp: 'Parcours', nav_writing: 'Écrits', nav_contact: 'Contact',
-  eyebrow: 'Ingénieur IA · Tourcoing, France', local: 'heure locale',
-  lead: "Je conçois des systèmes de machine learning et les logiciels qui les rendent utiles.",
-  now: "Actuellement <b>ingénieur Data / IA</b> en alternance chez <b>OXYA</b>, en parallèle de mon diplôme d'ingénieur à JUNIA ISEN.",
+  eyebrow: 'Ingénieur IA · Loos, France', local: 'heure locale',
+  lead: "Je construis des outils d'IA et les applis qui vont autour.",
+  now: "<b>Ingénieur Data / IA</b> (alternance) chez <b>OXYA</b>. Étudiant en IA à JUNIA ISEN.",
   cta_work: 'Voir mes projets', cv: 'Télécharger le CV',
-  ask_label: 'Posez-moi une question', ask_ph: 'ex. Sur quoi travaillez-vous ?',
-  work_h: 'Projets choisis', work_p: "Huit projets que je vous présenterais en premier. Passez la souris sur les animations — la plupart réagissent.",
-  v1: 'notation des annonces en direct', k1: 'Projet de hackathon · 2026',
-  d1: "Indique aux freelances quelles missions valent la peine. Il récupère les annonces de cinq plateformes, lit l'historique de chaque client via Bright Data et fait noter chaque mission de 0 à 100 par Claude, avec un verdict clair : go, risqué ou à éviter.",
-  v2: 'question → plan → recherche → réponse', k2: 'Recherche documentaire · 2026',
-  d2: "Un agent qui décide lui-même quand chercher, quoi chercher et quand il en sait assez. Construit avec LangGraph, Llama 3.3 sur Groq et PGVector — l'un des cinq projets avec lesquels j'ai comparé les approches simple, hybride et agentique.",
-  v3: 'réveil → écoute → réflexion → action', k3: 'Assistant vocal · 2026',
-  d3: "Un assistant vocal qui tourne entièrement sur mon ordinateur — sans internet ni cloud. Prototypé en Python, puis réécrit en C++ avec whisper.cpp et llama.cpp pour tenir en un seul programme qui ouvre des applis, gère la musique et range les fenêtres.",
-  v4: "survolez l'image pour l'inspecter", k4: 'Imagerie médicale', n4: 'Détection du cancer du sein',
-  d4: "Un réseau convolutif qui classe des IRM avec plus de 90 % de précision — vérifié par ROC-AUC et F1 plutôt que par la seule précision — et servi par une petite API Flask testable en ligne.",
-  v5: "survolez l'onde", k5: 'Apprentissage des langues',
-  d5: "Une appli d'apprentissage des langues avec un tuteur IA qui répond en contexte. Next.js côté interface, une API REST Django de plus de 15 endpoints derrière, PostgreSQL et Docker, déployée automatiquement sur Vercel.",
-  v6: "CV vs. offre d'emploi", k6: "Recherche d'emploi",
-  d6: "Un compagnon de recherche d'emploi : il note votre CV face à une offre, simule des entretiens avec retours, et suit candidatures et sujets de révision.",
-  v7: 'des points synthétiques qui apprennent la forme réelle', k7: 'Confidentialité &amp; données', n7: 'Données médicales synthétiques',
-  d7: "Les données patients sont difficiles à partager : ce pipeline génère des dossiers synthétiques réalistes avec un CTGAN, puis les vérifie en entraînant sur le faux et en testant sur le vrai.",
+  ask_label: 'Posez-moi une question', ask_ph: 'Sur quoi travaillez-vous ?',
+  work_h: 'Projets', work_p: "Ce que j'ai construit. Survolez les animations, la plupart réagissent.",
+  v1: "CV vs. offre d'emploi", k1: 'Produit en ligne · 2026',
+  d1: "Un créateur de CV avec IA, en ligne avec paiement Stripe. On écrit ou importe son CV, on l'adapte à une offre, on vérifie le score ATS et on exporte une page A4 propre.",
+  v2: 'notation des annonces', k2: 'Hackathon · 2026',
+  d2: "Montre aux freelances quelles missions valent le coup. Il lit les annonces de cinq sites et Claude note chacune de 0 à 100.",
+  v3: 'question → plan → recherche → réponse', k3: 'Recherche documentaire · 2026',
+  d3: "Un agent qui décide quand chercher et quoi chercher avant de répondre. L'un des cinq projets RAG que j'ai faits pour comparer les approches.",
+  v4: 'réveil → écoute → réflexion → action', k4: 'Assistant vocal · 2026',
+  d4: "Un assistant vocal qui tourne entièrement hors ligne sur mon ordinateur. D'abord écrit en Python, puis refait en C++ en un seul programme.",
+  v5: "survolez l'image pour l'inspecter", k5: 'Imagerie médicale', n5: 'Détection du cancer du sein',
+  d5: "Un CNN qui classe des IRM mammaires avec plus de 90 % de précision. Testable en ligne.",
+  v6: "survolez l'onde", k6: 'Apprentissage des langues',
+  d6: "Une appli de langues avec un tuteur IA. Interface Next.js, API Django, déployée sur Vercel.",
+  v7: 'de faux points qui apprennent la vraie forme', k7: 'Données', n7: 'Données médicales synthétiques',
+  d7: "Génère de faux dossiers patients qui se comportent comme les vrais, pour partager des données sans exposer personne.",
   v8: "regardez-le s'améliorer", k8: 'Apprentissage par renforcement',
-  d8: "Un petit jeu où un agent apprend à esquiver des obstacles uniquement par la récompense — aucune règle écrite à la main, juste des essais, des erreurs et un score.",
-  l_live: 'Démo en ligne', l_code: 'Code source', l_gcp: 'Déploiement GCP', l_cpp: 'Version C++', l_proto: 'Prototype Python',
-  more: "Douze autres — un comparateur de modèles NLP, un framework multi-agents, un serveur HTTP écrit en C, un évaluateur de reprise d'appareils et plusieurs applis web —", more_link: 'sont sur GitHub ↗',
-  research_h: 'Recherche', research_p: "Mon premier article, issu de mes années à KNUST : un modèle de dépistage cardiaque assez léger pour tourner sur un microcontrôleur.",
-  res_cite: 'Article de revue · IJSET Vol. 11, n° 6 · 2023',
+  d8: "Un petit jeu où un agent apprend à esquiver des obstacles par essais et erreurs.",
+  l_live: 'Démo en ligne', l_code: 'Code source', l_cpp: 'Version C++', l_proto: 'Version Python',
+  more: "Plus sur GitHub : G Careers, un comparateur de modèles NLP, un framework multi-agents, un serveur HTTP en C et d'autres.", more_link: 'github.com/links-astec ↗',
+  research_h: 'Recherche', research_p: "Publié en 2023, pendant ma licence à KNUST.",
+  res_cite: 'IJSET Vol. 11, n° 6 · 2023',
   res_title: "Conception d'un dispositif TinyML de dépistage prédictif des maladies cardiaques",
-  res_affil: 'Ingénierie informatique, KNUST',
-  res_abstract: "Un réseau de neurones peu profond sur Arduino Nano 33 BLE Sense prédit l'insuffisance cardiaque à partir de huit variables cliniques. Tout s'exécute sur l'appareil, sans connexion internet, ce qui le rend utilisable dans des structures de soins aux moyens limités.",
-  fig1: '82,61 %', fig2: '92,15 %', fig1_l: 'de précision', fig3_l: 'variables cliniques', res_read: "Lire l'article (PDF)", v9: "exécuté sur l'appareil",
+  res_abstract: "Un petit réseau de neurones sur Arduino qui dépiste l'insuffisance cardiaque à partir de huit mesures cliniques. Il fonctionne sans internet.",
+  fig1: '82,61 %', fig2: '92,15 %', fig1_l: 'de précision', fig3_l: 'mesures', res_read: "Lire l'article (PDF)", v9: "exécuté sur l'appareil",
   about_h: 'À propos',
-  about_p1: "Je suis ingénieur IA, originaire du Ghana et installé à Tourcoing. Je prépare un diplôme d'ingénieur en Intelligence Artificielle à JUNIA ISEN, et mon travail se situe là où les modèles rencontrent les produits : systèmes de recherche documentaire, évaluation de LLM, et les API et interfaces qui les entourent.",
-  about_p2: "Depuis septembre 2026, je suis ingénieur data / IA en alternance chez OXYA. Avant cela, j'ai passé l'été comme stagiaire de recherche à l'Université Sheffield Hallam sur la sécurité des LLM, et deux ans comme CTO de GLINAX au Ghana.",
-  about_p3: "Je m'intéresse aux parties peu glamour — découpage, évaluation, déploiement — parce que c'est souvent là qu'un modèle réussit ou échoue.",
-  tk_h: 'Mes outils', tk_lang: 'Langages', tk_ml: 'Machine learning', tk_llm: 'LLM', tk_web: 'Web', tk_infra: 'Données &amp; infra', tk_spoken: 'Langues parlées', tk_spoken_v: 'Anglais, français',
-  certs_h: 'Certifications', cert4: 'Réseaux &amp; sécurité',
+  about_p1: "Je viens du Ghana et je vis à Loos, près de Lille. J'étudie l'IA à JUNIA ISEN et je travaille comme ingénieur data / IA chez OXYA.",
+  about_p2: "Avant cela, j'ai fait un stage de recherche en IA à l'Université Sheffield Hallam et passé deux ans comme CTO de GLINAX au Ghana. Sur mon temps libre, je crée des produits comme CVMaster.",
+  tk_h: 'Outils', tk_lang: 'Langages', tk_ml: 'Machine learning', tk_llm: 'LLM', tk_web: 'Web', tk_infra: 'Données & infra', tk_spoken: 'Langues', tk_spoken_v: 'Anglais, français',
+  certs_h: 'Certifications', cert4: 'Réseaux & sécurité',
   exp_h: 'Parcours',
-  e1_when: "sept. 2026 – aujourd'hui", e1_role: 'Ingénieur Data / IA — alternance', e1_b1: "Alternance menée en parallèle des dernières années du cycle ingénieur à JUNIA ISEN.",
-  e2_when: 'mai – août 2026', e2_role: 'Stagiaire de recherche en IA — Sécurité des LLM &amp; NLP', e2_org: 'Université Sheffield Hallam · Sheffield, Royaume-Uni',
-  e2_b1: "Développement de pipelines NLP en Python pour la recherche en sécurité des LLM : traitement des données, classification, extraction d'information et évaluation des sorties",
-  e2_b2: 'Mesure et amélioration du comportement des LLM : réduction des hallucinations, analyse des biais, garde-fous et analyse systématique des erreurs',
-  e2_b3: "Conception et réglage de templates de prompts ; présentation des résultats à une équipe pluridisciplinaire et aux parties prenantes métier",
-  e3_role: "Diplôme d'ingénieur — Intelligence Artificielle",
-  e3_b1: 'Machine learning, IA agentique, NLP, vision par ordinateur, data science, génie logiciel',
-  e3_b2: "Titre d'Ingénieur RNCP39145 — Niveau 7 (Bac+5)",
-  e4_when: 'oct. 2024', e4_role: 'Stagiaire informatique',
-  e4_b1: "Maintenance réseau et dépannage dans un environnement Linux d'entreprise critique",
-  e4_b2: 'Configuration système et matériel — mises à jour, comptes utilisateurs, audits de sécurité et contrôles d’accès',
-  e5_role: 'Directeur technique (CTO)',
-  e5_b1: "Direction du développement d'un assistant d'étude IA pour étudiants, sous forme de bot Telegram et d'application web full-stack (Gabsther)",
-  e5_b2: "Ateliers pratiques d'IA et de robotique pour étudiants, et définition de la direction technique de l'entreprise",
-  e5_b3: "Responsable du cycle de vie produit sur plusieurs projets, de l'idée au déploiement",
-  e6_role: "Licence d'ingénierie informatique", e6_org: 'Université Kwame Nkrumah des sciences et technologies · Kumasi, Ghana',
-  e6_b1: 'Algorithmique et structures de données, systèmes embarqués, réseaux et sécurité, mathématiques, C/C++',
-  e6_b2: 'Recherche TinyML publiée sur le dépistage cardiaque (IJSET, 2023)',
+  e1_when: "sept. 2026 à aujourd'hui", e1_role: 'Ingénieur Data / IA (alternance)', e1_b: "Data et IA, en parallèle de mes études à JUNIA ISEN.",
+  e2_when: 'mai à août 2026', e2_role: 'Stagiaire de recherche en IA', e2_org: 'Université Sheffield Hallam, Royaume-Uni',
+  e2_b: "Pipelines NLP pour tester les LLM : hallucinations, biais et sécurité. Rédaction et réglage de prompts, présentation des résultats à l'équipe.",
+  e3_role: "Diplôme d'ingénieur en IA", e3_b: "Machine learning, NLP, vision par ordinateur et data science. Niveau master (RNCP niveau 7).",
+  e4_role: 'CTO', e4_b: "Direction d'un assistant d'étude IA pour étudiants (bot Telegram et appli web) et ateliers d'IA et de robotique.",
+  e5_when: 'oct. 2024', e5_role: 'Stagiaire informatique', e5_b: "Maintenance réseau, configuration système et contrôles de sécurité sous Linux.",
+  e6_role: "Licence d'ingénierie informatique", e6_b: "Algorithmique, systèmes embarqués, réseaux et sécurité. Recherche TinyML publiée en 2023.",
   writing_h: 'Écrits', writing_note: 'Articles en anglais.',
-  contact_big: 'Écrivez-moi.', copy: 'Copier',
-  contact_p: "Je suis en alternance chez OXYA, mais toujours ravi d'échanger sur des collaborations de recherche, des problèmes intéressants, ou ce que vous avez lu ici.",
-  form_name: 'Votre nom', form_email: 'Email', form_msg: 'Message', form_send: 'Envoyer', form_hint: 'Ouvre votre messagerie, pré-remplie',
-  foot_cv: 'Télécharger le CV'
+  contact_big: 'Me contacter', copy: 'Copier',
+  contact_p: "L'email est le plus rapide. Je suis partant pour parler de projets d'IA, de recherche ou de ce que vous avez vu ici.",
+  form_name: 'Votre nom', form_email: 'Email', form_msg: 'Message', form_send: 'Envoyer', form_hint: 'Ouvre votre messagerie',
+  foot_cv: 'Télécharger le CV', share: 'Partager cette page',
+  cv_role: "Ingénieur Data / IA (alternance) chez OXYA · Élève ingénieur en IA à JUNIA ISEN",
+  cv_profile: 'Profil', cv_profile_t: "Ingénieur IA qui construit des systèmes de machine learning et les applis qui vont autour : pipelines de recherche, évaluation de LLM, modèles médicaux et produits d'IA en ligne comme cvmaster.live.",
+  cv_exp: 'Expérience', cv_e1: 'Ingénieur Data / IA (alternance), OXYA', cv_e1d: "sept. 2026 à aujourd'hui", cv_e1t: "Data et IA, en parallèle du cycle ingénieur à JUNIA ISEN.",
+  cv_e2: 'Stagiaire de recherche en IA, Université Sheffield Hallam (R.-U.)', cv_e2d: 'mai à août 2026', cv_e2t: "Pipelines NLP en Python pour tester les LLM : hallucinations, biais et sécurité. Réglage de prompts et présentation des résultats.",
+  cv_e3: 'CTO, GLINAX (Ghana)', cv_e3t: "Direction d'un assistant d'étude IA pour étudiants (bot Telegram et appli web). Ateliers d'IA et de robotique.",
+  cv_e4: 'Stagiaire informatique, Ghana Civil Aviation Authority', cv_e4d: 'oct. 2024', cv_e4t: "Maintenance réseau, configuration système et contrôles de sécurité sous Linux.",
+  cv_proj: 'Projets',
+  cv_p1: "Créateur de CV avec IA en ligne, avec paiement Stripe : adapte un CV à une offre, vérifie le score ATS, exporte une page A4.",
+  cv_p2: "Projet de hackathon qui note de 0 à 100 les missions freelance de cinq sites.",
+  cv_p3: "Agent qui décide quand et quoi chercher. L'un de cinq projets RAG.",
+  cv_p4: "Assistant vocal hors ligne, réécrit de Python en un seul programme C++.",
+  cv_p5n: 'Détection du cancer du sein', cv_p5: "CNN qui classe des IRM mammaires avec plus de 90 % de précision, en ligne.",
+  cv_edu: 'Formation', cv_edu1: "Diplôme d'ingénieur en IA (niveau master, RNCP 7)", cv_edu2: "Licence d'ingénierie informatique",
+  cv_pub: 'Publication', cv_pub_t: "Dispositif TinyML de dépistage cardiaque. IJSET Vol. 11, n° 6, 2023. 82,61 % de précision, 92,15 % de ROC-AUC.",
+  cv_skills: 'Compétences', cv_s1: 'Langages :', cv_s5: 'Données / infra :',
+  cv_lang: 'Langues', cv_lang_t: 'Anglais, français', cv_cert: 'Certifications', cv_cert4: 'Réseaux & sécurité, KNUST (2024)'
 };
 const en = {};
 $$('[data-i18n]').forEach(el => { en[el.dataset.i18n] = el.innerHTML; });
@@ -820,21 +891,23 @@ const dict = { en, fr };
 const ui = {
   en: {
     dark: 'Dark', light: 'Light', toTheme: m => `Switch to ${m} mode`,
-    sugg: ['What are you working on now?', 'What is Strikebase?', 'Have you published anything?', 'Which projects run offline?'],
-    none: "I couldn't find that on this page. Try asking about my work, projects, research or skills.",
+    sugg: ['What are you working on?', 'What is CVMaster?', 'Have you published anything?', 'Where are you based?'],
+    none: "I couldn't find that here. Try asking about my work, projects or research.",
     goto: 'Read more →', cur: { explore: 'Explore', read: 'Read', write: 'Write' },
-    min: 'min read', draft: 'draft', copied: 'Email address copied', copyFail: 'Copy failed — select the address instead',
-    mailOpen: 'Opening your email app…', e_name: 'Tell me your name.', e_email: "That email address doesn't look right.", e_msg: 'A few more words, please.',
-    cvHint: 'Choose “Save as PDF” in the print dialog.'
+    min: 'min read', draft: 'draft', copied: 'Email copied', copyFail: 'Copy failed, select the address instead',
+    mailOpen: 'Opening your email app…', e_name: 'Tell me your name.', e_email: "That email doesn't look right.", e_msg: 'A few more words, please.',
+    cvHint: 'Choose “Save as PDF” in the print window.',
+    touch: { work_p: "Things I've built. Tap the animations, most of them react.", v5: 'tap the scan to inspect it', v6: 'tap the waveform' }
   },
   fr: {
     dark: 'Sombre', light: 'Clair', toTheme: m => `Passer en mode ${m === 'dark' ? 'sombre' : 'clair'}`,
-    sugg: ['Sur quoi travaillez-vous ?', "C'est quoi Strikebase ?", 'Avez-vous publié ?', 'Quels projets tournent hors ligne ?'],
-    none: "Je n'ai rien trouvé sur cette page. Essayez une question sur mon poste, mes projets, ma recherche ou mes compétences.",
+    sugg: ['Sur quoi travaillez-vous ?', "C'est quoi CVMaster ?", 'Avez-vous publié ?', 'Où habitez-vous ?'],
+    none: "Je n'ai rien trouvé ici. Essayez une question sur mon travail, mes projets ou ma recherche.",
     goto: 'En savoir plus →', cur: { explore: 'Explorer', read: 'Lire', write: 'Écrire' },
-    min: 'min de lecture', draft: 'brouillon', copied: 'Adresse copiée', copyFail: "La copie a échoué — sélectionnez l'adresse",
-    mailOpen: 'Ouverture de votre messagerie…', e_name: 'Indiquez votre nom.', e_email: 'Cette adresse ne semble pas valide.', e_msg: "Quelques mots de plus, s'il vous plaît.",
-    cvHint: "Choisissez « Enregistrer en PDF » dans la fenêtre d'impression."
+    min: 'min de lecture', draft: 'brouillon', copied: 'Email copié', copyFail: "Échec de la copie, sélectionnez l'adresse",
+    mailOpen: 'Ouverture de votre messagerie…', e_name: 'Indiquez votre nom.', e_email: 'Cet email ne semble pas valide.', e_msg: "Quelques mots de plus, s'il vous plaît.",
+    cvHint: "Choisissez « Enregistrer en PDF » dans la fenêtre d'impression.",
+    touch: { work_p: "Ce que j'ai construit. Touchez les animations, la plupart réagissent.", v5: "touchez l'image pour l'inspecter", v6: "touchez l'onde" }
   }
 };
 
@@ -867,13 +940,12 @@ async function copyText(text) {
   }
 }
 
-/* ── theme ── */
-const darkMQ = matchMedia('(prefers-color-scheme: dark)');
-const currentTheme = () => html.dataset.theme || (darkMQ.matches ? 'dark' : 'light');
+/* ── theme (dark by default) ── */
+const currentTheme = () => html.dataset.theme || 'dark';
 const P = {};
 function readPalette() {
   const cs = getComputedStyle(html);
-  const map = { ink: '--ink', ink2: '--ink-2', muted: '--muted', rule: '--rule', accent: '--accent', paper: '--paper', ok: '--ok', warn: '--warn' };
+  const map = { ink: '--ink', ink2: '--ink-2', muted: '--muted', rule: '--rule', accent: '--hi-text', paper: '--panel', ok: '--ok', warn: '--warn' };
   for (const [k, v] of Object.entries(map)) P[k] = cs.getPropertyValue(v).trim();
 }
 const rgba = (hex, a) => { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16 & 255},${n >> 8 & 255},${n & 255},${a})`; };
@@ -896,7 +968,6 @@ $('#themeBtn').addEventListener('click', e => {
       { duration: 700, easing: 'cubic-bezier(.2,.8,.2,1)', pseudoElement: '::view-transition-new(root)' });
   });
 });
-darkMQ.addEventListener('change', syncTheme);
 
 /* ── project animations ── */
 const stages = [];
@@ -904,6 +975,7 @@ const ease = x => x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
 const clamp01 = x => Math.max(0, Math.min(1, x));
 function mulberry32(a) { return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
 const MONO = '500 11px "IBM Plex Mono", monospace';
+const BIG = sz => `800 ${sz}px Archivo, Arial, sans-serif`;
 
 function stage(canvas, draw) {
   const ctx = canvas.getContext('2d');
@@ -920,7 +992,14 @@ function stage(canvas, draw) {
     frame(); raf = s.on ? requestAnimationFrame(loop) : 0;
   };
   canvas.addEventListener('pointermove', e => { const r = canvas.getBoundingClientRect(); s.mx = e.clientX - r.left; s.my = e.clientY - r.top; s.hover = true; if (reduced) frame(); });
-  canvas.addEventListener('pointerleave', () => { s.hover = false; s.mx = s.my = -1e3; if (reduced) frame(); });
+  canvas.addEventListener('pointerleave', e => { if (e.pointerType !== 'mouse') return; s.hover = false; s.mx = s.my = -1e3; if (reduced) frame(); });
+  let tapTimer;
+  canvas.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse') return;
+    const r = canvas.getBoundingClientRect(); s.mx = e.clientX - r.left; s.my = e.clientY - r.top; s.hover = true; if (reduced) frame();
+    clearTimeout(tapTimer); tapTimer = setTimeout(() => { s.hover = false; s.mx = s.my = -1e3; if (reduced) frame(); }, 2200);
+    buzz();
+  });
   new ResizeObserver(size).observe(canvas);
   if (!reduced) new IntersectionObserver(([e]) => {
     s.on = e.isIntersecting;
@@ -932,6 +1011,35 @@ function stage(canvas, draw) {
 }
 
 const VIZ = {
+  ats() {
+    const rnd = mulberry32(3);
+    const lines = Array.from({ length: 12 }, (_, i) => ({ w: i === 0 ? .55 : i === 4 || i === 8 ? .3 : .6 + rnd() * .35, head: i === 0 || i === 4 || i === 8 }));
+    const marks = [[2, .05, .3], [3, .42, .34], [6, .1, .26], [9, .3, .4], [10, .05, .22]];
+    const kws = [['Python', 1], ['SQL', 1], ['Docker', 1], ['Kubernetes', 0]];
+    return (c, s) => {
+      const p = (s.t % 7.5) / 7.5, dx = s.w * .08, dy = s.h * .12, dw = s.w * .42, dh = s.h * .76, lh = (dh - 28) / lines.length;
+      c.fillStyle = P.ink; c.globalAlpha = .06; c.fillRect(dx, dy, dw, dh); c.globalAlpha = 1;
+      c.strokeStyle = P.rule; c.lineWidth = 1; c.strokeRect(dx + .5, dy + .5, dw, dh);
+      lines.forEach((l, i) => { c.fillStyle = rgba(P.ink, l.head ? .7 : .2); c.fillRect(dx + 16, dy + 18 + i * lh, (dw - 32) * l.w, l.head ? 4 : 3); });
+      marks.forEach(([li, st, len], j) => {
+        const on = clamp01((p - .08 - j * .08) / .08); if (!on) return;
+        c.fillStyle = rgba(P.accent, .35); c.fillRect(dx + 16 + (dw - 32) * st, dy + 15 + li * lh, (dw - 32) * len * on, 9);
+      });
+      const cx = s.w * .75, cy = s.h * .38, r = Math.min(s.w, s.h) * .15, sc = 86 * ease(clamp01(p / .55));
+      c.lineWidth = 7; c.strokeStyle = P.rule; c.beginPath(); c.arc(cx, cy, r, 0, 7); c.stroke();
+      c.strokeStyle = P.accent; c.beginPath(); c.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + sc / 100 * Math.PI * 2); c.stroke();
+      c.fillStyle = P.ink; c.font = BIG(Math.round(r * .62)); c.textAlign = 'center'; c.textBaseline = 'middle';
+      c.fillText(Math.round(sc), cx, cy + 1);
+      c.font = MONO; c.fillStyle = P.muted; c.fillText('job match', cx, cy + r + 20);
+      c.textAlign = 'left';
+      kws.forEach(([w, ok], j) => {
+        const a = clamp01((p - .3 - j * .09) / .06); if (!a) return;
+        c.globalAlpha = a; c.fillStyle = ok ? P.ink : P.muted;
+        c.fillText((ok ? '✓ ' : '× ') + w, cx - r * .95, cy + r + 44 + j * 18);
+        c.globalAlpha = 1;
+      });
+    };
+  },
   strike() {
     const L = [['upwork', 87], ['freelancer', 64], ['toptal', 91], ['guru', 38], ['peopleperhour', 72]];
     return (c, s) => {
@@ -941,8 +1049,8 @@ const VIZ = {
       L.forEach(([name, score], i) => {
         const y = top + i * rowH + rowH / 2, a = clamp01((p - .05 - i * .1) / .12);
         const verdict = score >= 75 ? 'GO' : score >= 50 ? 'RISKY' : 'SKIP';
-        const col = verdict === 'GO' ? P.ok : verdict === 'RISKY' ? P.warn : P.muted;
-        if (s.hover && Math.abs(s.my - y) < rowH / 2) { c.fillStyle = rgba(P.ink, .05); c.fillRect(padX - 10, y - rowH / 2 + 2, s.w - 2 * padX + 20, rowH - 4); }
+        const col = verdict === 'GO' ? P.accent : verdict === 'RISKY' ? P.warn : P.muted;
+        if (s.hover && Math.abs(s.my - y) < rowH / 2) { c.fillStyle = rgba(P.ink, .06); c.fillRect(padX - 10, y - rowH / 2 + 2, s.w - 2 * padX + 20, rowH - 4); }
         c.textAlign = 'left'; c.fillStyle = a ? P.ink : P.muted; c.fillText(name, padX, y);
         c.fillStyle = P.rule; c.fillRect(barX, y - 1, barW, 2);
         c.fillStyle = col; c.fillRect(barX, y - 2, barW * score * ease(a) / 100, 4);
@@ -953,7 +1061,7 @@ const VIZ = {
       });
       if (p < .62) {
         const sy = top + clamp01(p / .62) * rowH * L.length;
-        c.strokeStyle = rgba(P.accent, .55); c.lineWidth = 1;
+        c.strokeStyle = rgba(P.accent, .6); c.lineWidth = 1;
         c.beginPath(); c.moveTo(padX - 10, sy); c.lineTo(s.w - padX + 10, sy); c.stroke();
       }
       c.textBaseline = 'alphabetic'; c.textAlign = 'left'; c.fillStyle = P.muted;
@@ -969,7 +1077,7 @@ const VIZ = {
       c.lineWidth = 1.2;
       for (const [a, b, p] of E) {
         const [x1, y1] = at(a), [x2, y2] = at(b), k = ph - p;
-        c.strokeStyle = k >= 1 && ph < 6 ? rgba(P.accent, .45) : rgba(P.ink, .18);
+        c.strokeStyle = k >= 1 && ph < 6 ? rgba(P.accent, .5) : rgba(P.ink, .2);
         c.beginPath(); c.moveTo(x1, y1); c.lineTo(x2, y2); c.stroke();
         if (k >= 0 && k < 1) {
           const e = ease(k), x = x1 + (x2 - x1) * e, y = y1 + (y2 - y1) * e;
@@ -990,11 +1098,11 @@ const VIZ = {
           c.beginPath(); c.moveTo(x - w, y - h); c.lineTo(x - w, y + h); c.moveTo(x + w, y - h); c.lineTo(x + w, y + h); c.stroke();
           c.beginPath(); c.ellipse(x, y - h, w, 5, 0, 0, 7); c.fill(); c.stroke();
           const hot = ph >= 2 && ph < 3;
-          [-2, 4, 10].forEach((o, i) => { c.fillStyle = hot && (ph - 2) * 3 > i ? P.accent : rgba(P.ink, .25); c.fillRect(x - 8, y + o - 2, 16, 1.5); });
+          [-2, 4, 10].forEach((o, i) => { c.fillStyle = hot && (ph - 2) * 3 > i ? P.accent : rgba(P.ink, .3); c.fillRect(x - 8, y + o - 2, 16, 1.5); });
           ly = y + h + 12;
         } else {
           const r = near ? 8 : 6;
-          if (near) { c.strokeStyle = rgba(P.accent, .45); c.beginPath(); c.arc(x, y, r + 7, 0, 7); c.stroke(); }
+          if (near) { c.strokeStyle = rgba(P.accent, .5); c.beginPath(); c.arc(x, y, r + 7, 0, 7); c.stroke(); }
           c.fillStyle = lit ? P.accent : P.paper; c.strokeStyle = lit ? P.accent : rgba(P.ink, .7);
           c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); c.stroke();
         }
@@ -1008,31 +1116,30 @@ const VIZ = {
     const CMDS = [['open spotify', 'ShellExecute("spotify")'], ['set volume to 50', 'volume → 50%'], ['snap window left', 'Win + ←'], ['take a screenshot', 'saved to Desktop']];
     return (c, s) => {
       const cyc = 4.8, [cmd, act] = CMDS[Math.floor(s.t / cyc) % CMDS.length], p = (s.t % cyc) / cyc;
-      const padX = s.w * .08, gap = 12, boxW = (s.w - padX * 2 - gap * 3) / 4, by = s.h * .18, bh = 36;
+      const padX = s.w * .08, gap = 10, boxW = (s.w - padX * 2 - gap * 3) / 4, by = s.h * .18, bh = 36;
       const active = p < .32 ? -1 : Math.min(3, Math.floor(clamp01((p - .32) / .5) * 4));
       c.lineWidth = 1;
       STEPS.forEach((name, i) => {
         const x = padX + i * (boxW + gap), on = i <= active;
-        c.fillStyle = on ? rgba(P.accent, .12) : P.paper; c.strokeStyle = on ? P.accent : P.rule;
-        c.beginPath(); c.roundRect(x, by, boxW, bh, 8); c.fill(); c.stroke();
-        c.fillStyle = on ? P.ink : P.muted; c.font = MONO; c.textAlign = 'center'; c.textBaseline = 'middle';
+        c.fillStyle = on ? P.accent : P.paper; c.strokeStyle = on ? P.accent : P.rule;
+        c.fillRect(x, by, boxW, bh); c.strokeRect(x + .5, by + .5, boxW - 1, bh - 1);
+        c.fillStyle = on ? P.paper : P.muted; c.font = MONO; c.textAlign = 'center'; c.textBaseline = 'middle';
         c.fillText(name, x + boxW / 2, by + bh / 2);
-        if (i < 3) { c.strokeStyle = i < active ? P.accent : P.rule; c.beginPath(); c.moveTo(x + boxW + 2, by + bh / 2); c.lineTo(x + boxW + gap - 2, by + bh / 2); c.stroke(); }
       });
       const wy = s.h * .5, n = 44, step = (s.w - padX * 2) / (n - 1), speaking = p < .34;
-      c.lineCap = 'round'; c.lineWidth = Math.max(2, step * .4);
+      c.lineCap = 'butt'; c.lineWidth = Math.max(2, step * .45);
       for (let i = 0; i < n; i++) {
         const x = padX + i * step;
         let a = speaking ? .15 + .85 * Math.abs(Math.sin(s.t * 9 + i * .7) * Math.sin(s.t * 3.3 + i * .21)) : .05;
         if (s.hover) a += .5 * Math.exp(-((x - s.mx) ** 2) / 1800);
         const h = Math.max(1, Math.min(1, a) * s.h * .08);
-        c.strokeStyle = rgba(P.ink, speaking ? .55 : .2);
+        c.strokeStyle = rgba(P.ink, speaking ? .7 : .2);
         c.beginPath(); c.moveTo(x, wy - h); c.lineTo(x, wy + h); c.stroke();
       }
-      c.lineCap = 'butt'; c.textAlign = 'left'; c.textBaseline = 'alphabetic';
-      c.font = `italic 400 ${Math.max(16, Math.min(24, s.w / 24))}px Newsreader, Georgia, serif`; c.fillStyle = P.ink;
-      c.fillText('“' + cmd.slice(0, Math.ceil(cmd.length * clamp01(p / .3))) + (p >= .3 ? '”' : ''), padX, s.h * .74);
-      if (p > .8) { c.font = MONO; c.fillStyle = P.accent; c.fillText('→ ' + act, padX, s.h * .74 + 28); }
+      c.textAlign = 'left'; c.textBaseline = 'alphabetic';
+      c.font = BIG(Math.max(17, Math.min(26, s.w / 22))); c.fillStyle = P.ink;
+      c.fillText('“' + cmd.slice(0, Math.ceil(cmd.length * clamp01(p / .3))) + (p >= .3 ? '”' : ''), padX, s.h * .75);
+      if (p > .8) { c.font = MONO; c.fillStyle = P.accent; c.fillText('→ ' + act, padX, s.h * .75 + 28); }
       c.font = MONO; c.fillStyle = P.muted; c.textAlign = 'right'; c.fillText('offline', s.w - padX, s.h - 22);
     };
   },
@@ -1051,12 +1158,12 @@ const VIZ = {
       const kq = s.hover ? Math.floor((s.mx - ox) / cell) : idx % cols, kr = s.hover ? Math.floor((s.my - oy) / cell) : Math.floor(idx / cols);
       for (let i = 0; i < total; i++) {
         const q = i % cols, r = (i / cols) | 0, x = ox + q * cell, y = oy + r * cell;
-        c.fillStyle = rgba(P.ink, .05 + I[i] * .5); c.fillRect(x + .5, y + .5, cell - 1, cell - 1);
+        c.fillStyle = rgba(P.ink, .04 + I[i] * .55); c.fillRect(x + .5, y + .5, cell - 1, cell - 1);
         const seen = s.hover ? Math.hypot(q - kq, r - kr) < 3.4 : i < idx;
-        if (seen && L[i] > .04) { c.fillStyle = rgba(P.accent, L[i] * .9); c.fillRect(x + .5, y + .5, cell - 1, cell - 1); }
+        if (seen && L[i] > .04) { c.fillStyle = rgba(P.accent, L[i] * .95); c.fillRect(x + .5, y + .5, cell - 1, cell - 1); }
       }
       if (kq >= 0 && kq < cols && kr >= 0 && kr < rows && (s.hover || k < 1)) {
-        c.strokeStyle = P.accent; c.lineWidth = 1.5; c.strokeRect(ox + (kq - 1) * cell, oy + (kr - 1) * cell, cell * 3, cell * 3);
+        c.strokeStyle = P.accent; c.lineWidth = 2; c.strokeRect(ox + (kq - 1) * cell, oy + (kr - 1) * cell, cell * 3, cell * 3);
       }
       c.font = MONO; c.fillStyle = P.muted; c.textBaseline = 'alphabetic';
       c.textAlign = 'left'; c.fillText('3×3 filter', ox, s.h - pad + 6);
@@ -1066,9 +1173,9 @@ const VIZ = {
   voice() {
     const PH = [["Bonjour, je m'appelle Gabriel.", 'Hello, my name is Gabriel.'], ['Où se trouve la gare ?', 'Where is the train station?'], ["J'apprends avec un tuteur IA.", "I'm learning with an AI tutor."]];
     return (c, s) => {
-      const n = 56, x0 = s.w * .08, x1 = s.w * .92, cy = s.h * .42, gap = (x1 - x0) / (n - 1), maxA = s.h * .22, cyc = 4.6;
+      const n = 52, x0 = s.w * .08, x1 = s.w * .92, cy = s.h * .42, gap = (x1 - x0) / (n - 1), maxA = s.h * .22, cyc = 4.6;
       const [src, dst] = PH[Math.floor(s.t / cyc) % PH.length], p = (s.t % cyc) / cyc;
-      c.lineCap = 'round'; c.lineWidth = Math.max(2, gap * .42);
+      c.lineCap = 'butt'; c.lineWidth = Math.max(2, gap * .5);
       for (let i = 0; i < n; i++) {
         const x = x0 + i * gap, u = i / (n - 1);
         let a = .05 + Math.sin(u * Math.PI) * (.3 + .7 * Math.abs(Math.sin(s.t * 3.1 + i * .45) * Math.sin(s.t * 1.7 + i * .13)));
@@ -1077,40 +1184,11 @@ const VIZ = {
         c.strokeStyle = u < p * 1.4 ? P.accent : rgba(P.ink, .3);
         c.beginPath(); c.moveTo(x, cy - h); c.lineTo(x, cy + h); c.stroke();
       }
-      c.lineCap = 'butt'; c.textAlign = 'center'; c.textBaseline = 'alphabetic';
-      c.font = `italic 400 ${Math.max(16, Math.min(24, s.w / 24))}px Newsreader, Georgia, serif`; c.fillStyle = P.ink;
+      c.textAlign = 'center'; c.textBaseline = 'alphabetic';
+      c.font = BIG(Math.max(16, Math.min(24, s.w / 24))); c.fillStyle = P.ink;
       c.fillText(src.slice(0, Math.ceil(src.length * clamp01(p * 1.8))), s.w / 2, s.h * .8);
       c.font = MONO; c.fillStyle = P.muted;
       c.fillText(dst.slice(0, Math.ceil(dst.length * clamp01((p - .5) / .3))), s.w / 2, s.h * .8 + 26);
-    };
-  },
-  ats() {
-    const rnd = mulberry32(3);
-    const lines = Array.from({ length: 12 }, (_, i) => ({ w: i === 0 ? .55 : i === 4 || i === 8 ? .3 : .6 + rnd() * .35, head: i === 0 || i === 4 || i === 8 }));
-    const marks = [[2, .05, .3], [3, .42, .34], [6, .1, .26], [9, .3, .4], [10, .05, .22]];
-    const kws = [['Python', 1], ['LangGraph', 1], ['Docker', 1], ['Kubernetes', 0]];
-    return (c, s) => {
-      const p = (s.t % 7.5) / 7.5, dx = s.w * .08, dy = s.h * .12, dw = s.w * .42, dh = s.h * .76, lh = (dh - 28) / lines.length;
-      c.fillStyle = P.paper; c.strokeStyle = P.rule; c.lineWidth = 1;
-      c.beginPath(); c.roundRect(dx, dy, dw, dh, 8); c.fill(); c.stroke();
-      lines.forEach((l, i) => { c.fillStyle = rgba(P.ink, l.head ? .55 : .16); c.fillRect(dx + 16, dy + 18 + i * lh, (dw - 32) * l.w, l.head ? 4 : 3); });
-      marks.forEach(([li, st, len], j) => {
-        const on = clamp01((p - .08 - j * .08) / .08); if (!on) return;
-        c.fillStyle = rgba(P.accent, .3); c.fillRect(dx + 16 + (dw - 32) * st, dy + 15 + li * lh, (dw - 32) * len * on, 9);
-      });
-      const cx = s.w * .75, cy = s.h * .38, r = Math.min(s.w, s.h) * .15, sc = 86 * ease(clamp01(p / .55));
-      c.lineWidth = 6; c.strokeStyle = P.rule; c.beginPath(); c.arc(cx, cy, r, 0, 7); c.stroke();
-      c.strokeStyle = P.accent; c.lineCap = 'round'; c.beginPath(); c.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + sc / 100 * Math.PI * 2); c.stroke(); c.lineCap = 'butt';
-      c.fillStyle = P.ink; c.font = `400 ${Math.round(r * .62)}px Newsreader, Georgia, serif`; c.textAlign = 'center'; c.textBaseline = 'middle';
-      c.fillText(Math.round(sc), cx, cy + 1);
-      c.font = MONO; c.fillStyle = P.muted; c.fillText('match', cx, cy + r + 18);
-      c.textAlign = 'left';
-      kws.forEach(([w, ok], j) => {
-        const a = clamp01((p - .3 - j * .09) / .06); if (!a) return;
-        c.globalAlpha = a; c.fillStyle = ok ? P.ink : P.muted;
-        c.fillText((ok ? '✓ ' : '– ') + w, cx - r * .95, cy + r + 42 + j * 18);
-        c.globalAlpha = 1;
-      });
     };
   },
   gan() {
@@ -1121,7 +1199,7 @@ const VIZ = {
     return (c, s) => {
       const e = ease(clamp01((s.t % 10) / 7)), padX = s.w * .08;
       const px = x => padX + x * (s.w - padX * 2), py = y => s.h * (.12 + Math.min(1, Math.max(0, y)) * .72);
-      c.lineWidth = 1.2; c.strokeStyle = rgba(P.ink, .45);
+      c.lineWidth = 1.2; c.strokeStyle = rgba(P.ink, .5);
       R.forEach(([x, y]) => { c.beginPath(); c.arc(px(x), py(y), 3.6, 0, 7); c.stroke(); });
       c.fillStyle = P.accent;
       F.forEach(f => {
@@ -1131,10 +1209,10 @@ const VIZ = {
         c.beginPath(); c.arc(px(x), py(y), 3, 0, 7); c.fill();
       });
       c.font = MONO; c.textBaseline = 'alphabetic';
-      c.strokeStyle = rgba(P.ink, .45); c.beginPath(); c.arc(padX + 4, 26, 3.6, 0, 7); c.stroke();
+      c.strokeStyle = rgba(P.ink, .5); c.beginPath(); c.arc(padX + 4, 26, 3.6, 0, 7); c.stroke();
       c.fillStyle = P.muted; c.textAlign = 'left'; c.fillText('real', padX + 14, 30);
       c.fillStyle = P.accent; c.beginPath(); c.arc(padX + 62, 26, 3, 0, 7); c.fill();
-      c.fillStyle = P.muted; c.fillText('synthetic', padX + 71, 30);
+      c.fillStyle = P.muted; c.fillText('fake', padX + 71, 30);
       c.fillText(`epoch ${Math.round(e * 300)}`, padX, s.h - 22);
       c.textAlign = 'right'; c.fillText(`critic can tell: ${Math.round((1 - e * .48) * 100)}%`, s.w - padX, s.h - 22);
     };
@@ -1165,10 +1243,10 @@ const VIZ = {
       c.setLineDash([3, 7]); c.strokeStyle = P.rule; c.lineWidth = 1;
       lanes.forEach(y => { c.beginPath(); c.moveTo(padX, y); c.lineTo(s.w - padX, y); c.stroke(); });
       c.setLineDash([]);
-      c.fillStyle = rgba(P.accent, .08); c.fillRect(ax, ay - gap * .32, range, gap * .64);
-      obs.forEach(o => { const x = o.x * s.w; if (x < padX - 10 || x > s.w - padX + 10) return; c.fillStyle = rgba(P.ink, .72); c.beginPath(); c.roundRect(x - 10, lanes[o.lane] - 10, 20, 20, 5); c.fill(); });
+      c.fillStyle = rgba(P.accent, .1); c.fillRect(ax, ay - gap * .32, range, gap * .64);
+      obs.forEach(o => { const x = o.x * s.w; if (x < padX - 10 || x > s.w - padX + 10) return; c.fillStyle = rgba(P.ink, .8); c.fillRect(x - 10, lanes[o.lane] - 10, 20, 20); });
       c.fillStyle = P.accent; c.beginPath(); c.arc(ax, ay, 9, 0, 7); c.fill();
-      if (flash) { c.fillStyle = rgba(P.accent, flash * .14); c.fillRect(0, 0, s.w, s.h); }
+      if (flash) { c.fillStyle = rgba(P.accent, flash * .16); c.fillRect(0, 0, s.w, s.h); }
       c.font = MONO; c.textBaseline = 'alphabetic'; c.fillStyle = P.muted;
       c.textAlign = 'left'; c.fillText(skill < .5 ? 'still learning…' : skill < 1 ? 'getting better…' : 'trained', padX, 30);
       c.fillText(`episode ${ep}`, padX, s.h - 22);
@@ -1179,7 +1257,7 @@ const VIZ = {
     const beat = b => b < .38 ? 0 : b < .44 ? -Math.sin((b - .38) / .06 * Math.PI) * .18 : b < .5 ? 0 : b < .52 ? Math.sin((b - .5) / .02 * Math.PI) * .2 : b < .56 ? -Math.sin((b - .52) / .04 * Math.PI) : b < .59 ? Math.sin((b - .56) / .03 * Math.PI) * .4 : b < .7 ? 0 : b < .8 ? -Math.sin((b - .7) / .1 * Math.PI) * .25 : 0;
     return (c, s) => {
       const padX = s.w * .08, ey = s.h * .3, amp = s.h * .14, cycles = 2.2, sp = .45;
-      c.strokeStyle = P.accent; c.lineWidth = 1.8; c.lineJoin = 'round'; c.beginPath();
+      c.strokeStyle = P.accent; c.lineWidth = 2; c.lineJoin = 'round'; c.beginPath();
       for (let x = padX; x <= s.w - padX; x += 2) {
         const b = (((x - padX) / (s.w - padX * 2)) * cycles + s.t * sp) % 1;
         const y = ey + beat(b) * amp;
@@ -1188,19 +1266,19 @@ const VIZ = {
       c.stroke();
       const cw = Math.min(118, s.w * .24), chh = cw * .7, cx = padX + 6, cy = s.h * .58;
       c.fillStyle = P.paper; c.strokeStyle = rgba(P.ink, .6); c.lineWidth = 1.2;
-      c.beginPath(); c.roundRect(cx, cy, cw, chh, 6); c.fill(); c.stroke();
+      c.fillRect(cx, cy, cw, chh); c.strokeRect(cx + .5, cy + .5, cw - 1, chh - 1);
       for (let i = 0; i < 5; i++) { const py = cy + chh * (i + 1) / 6; c.beginPath(); c.moveTo(cx - 6, py); c.lineTo(cx, py); c.moveTo(cx + cw, py); c.lineTo(cx + cw + 6, py); c.stroke(); }
-      c.fillStyle = P.muted; c.font = MONO; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('nano 33', cx + cw / 2, cy + chh / 2);
+      c.fillStyle = P.muted; c.font = MONO; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('arduino', cx + cw / 2, cy + chh / 2);
       const layers = [8, 4, 1], lx = [.5, .67, .84].map(f => f * s.w), top = s.h * .56, bot = s.h * .84;
       const pos = layers.map((n, li) => Array.from({ length: n }, (_, j) => [lx[li], n === 1 ? (top + bot) / 2 : top + (bot - top) * j / (n - 1)]));
       const ph = (s.t * sp) % 1, act = ph < .6 ? -1 : Math.min(2, Math.floor((ph - .6) / .12));
-      c.strokeStyle = rgba(P.ink, .12); c.lineWidth = 1;
+      c.strokeStyle = rgba(P.ink, .14); c.lineWidth = 1;
       for (let li = 0; li < 2; li++) pos[li].forEach(a => pos[li + 1].forEach(b => { c.beginPath(); c.moveTo(a[0], a[1]); c.lineTo(b[0], b[1]); c.stroke(); }));
-      c.strokeStyle = rgba(P.ink, .3); c.beginPath(); c.moveTo(cx + cw + 10, cy + chh / 2); c.lineTo(lx[0] - 12, cy + chh / 2); c.stroke();
+      c.strokeStyle = rgba(P.ink, .35); c.beginPath(); c.moveTo(cx + cw + 10, cy + chh / 2); c.lineTo(lx[0] - 12, cy + chh / 2); c.stroke();
       pos.forEach((Ls, li) => Ls.forEach(([x, y]) => { c.fillStyle = li <= act ? P.accent : P.paper; c.strokeStyle = li <= act ? P.accent : rgba(P.ink, .55); c.beginPath(); c.arc(x, y, li === 2 ? 7 : 4.5, 0, 7); c.fill(); c.stroke(); }));
       c.textAlign = 'left'; c.textBaseline = 'alphabetic'; c.fillStyle = P.muted;
-      c.fillText('8 features', lx[0] - 30, top - 12);
-      c.textAlign = 'right'; c.fillText('on-device · no internet', s.w - padX, s.h - 16);
+      c.fillText('8 inputs', lx[0] - 26, top - 12);
+      c.textAlign = 'right'; c.fillText('no internet', s.w - padX, s.h - 16);
     };
   }
 };
@@ -1208,60 +1286,61 @@ readPalette();
 $$('canvas[data-viz]').forEach(cv => stage(cv, VIZ[cv.dataset.viz]()));
 document.fonts && document.fonts.ready.then(() => stages.forEach(s => s.redraw()));
 
-/* ── ask me something: a small retrieval engine over this page ── */
+/* ── ask me something: a small search engine over this page ── */
 const CHUNKS = [
   { href: '#experience', t: 'oxya',
-    en: "Right now I'm a Data / AI Engineer in alternance at OXYA, which I started in September 2026, alongside my engineering degree in AI at JUNIA ISEN. I'm based in Tourcoing, France.",
-    fr: "En ce moment, je suis ingénieur Data / IA en alternance chez OXYA depuis septembre 2026, en parallèle de mon diplôme d'ingénieur en IA à JUNIA ISEN. Je vis à Tourcoing." },
-  { href: '#about', t: 'about',
-    en: "I'm an AI engineer from Ghana, living in Tourcoing, France. I build machine-learning systems and the software around them: retrieval systems, LLM evaluation, medical models and assistants that run locally.",
-    fr: "Je suis ingénieur IA, originaire du Ghana et installé à Tourcoing. Je conçois des systèmes de machine learning et les logiciels qui les entourent : recherche documentaire, évaluation de LLM, modèles médicaux et assistants locaux." },
+    en: "I'm a Data / AI Engineer in alternance at OXYA since September 2026. At the same time I'm studying AI at JUNIA ISEN.",
+    fr: "Je suis ingénieur Data / IA en alternance chez OXYA depuis septembre 2026. En parallèle, j'étudie l'IA à JUNIA ISEN." },
+  { href: '#work', t: 'cvmaster',
+    en: "CVMaster is my AI CV builder, live at cvmaster.live with Stripe payments. You write or upload a CV, tailor it to a job offer, check it against ATS filters and export one clean A4 page. Built with Vue, Express, PostgreSQL and Groq.",
+    fr: "CVMaster est mon créateur de CV avec IA, en ligne sur cvmaster.live avec paiement Stripe. On écrit ou importe un CV, on l'adapte à une offre, on vérifie le score ATS et on exporte une page A4. Fait avec Vue, Express, PostgreSQL et Groq." },
+  { href: '#about', t: 'about based',
+    en: "I'm from Ghana and I live in Loos, near Lille, in the north of France.",
+    fr: "Je viens du Ghana et je vis à Loos, près de Lille, dans le nord de la France." },
   { href: '#contact', t: 'contact',
-    en: "The quickest way to reach me is email: gabbyquaye2021@gmail.com. I'm also on LinkedIn and GitHub, and always glad to hear about research collaborations or interesting problems.",
-    fr: "Le plus simple pour me joindre : gabbyquaye2021@gmail.com. Je suis aussi sur LinkedIn et GitHub, et toujours ravi d'échanger sur des collaborations de recherche ou des problèmes intéressants." },
+    en: "Email is the fastest way to reach me: gabbyquaye2021@gmail.com. I'm also on LinkedIn and GitHub.",
+    fr: "L'email est le plus rapide : gabbyquaye2021@gmail.com. Je suis aussi sur LinkedIn et GitHub." },
   { href: '#experience', t: 'sheffield',
-    en: "From May to August 2026 I was an AI research intern at Sheffield Hallam University in the UK, building NLP pipelines for LLM security research: hallucinations, bias, guard-rails and error analysis.",
-    fr: "De mai à août 2026, j'ai été stagiaire de recherche en IA à l'Université Sheffield Hallam (Royaume-Uni), sur des pipelines NLP pour la sécurité des LLM : hallucinations, biais, garde-fous et analyse des erreurs." },
+    en: "From May to August 2026 I was an AI research intern at Sheffield Hallam University in the UK. I built NLP pipelines to test LLMs for hallucinations, bias and safety issues.",
+    fr: "De mai à août 2026, j'ai été stagiaire de recherche en IA à l'Université Sheffield Hallam, au Royaume-Uni. J'ai construit des pipelines NLP pour tester les LLM : hallucinations, biais et sécurité." },
   { href: '#research', t: 'research',
-    en: "Yes — I co-authored a published paper with Acquah Andrews: “Design of a TinyML-Based Predictive Heart Disease Screening Device” (IJSET, 2023). It runs a small neural network on an Arduino, with 82.61% accuracy and 92.15% ROC-AUC, without an internet connection.",
-    fr: "Oui — j'ai co-signé un article publié avec Acquah Andrews : « Conception d'un dispositif TinyML de dépistage prédictif des maladies cardiaques » (IJSET, 2023). Un petit réseau de neurones tourne sur un Arduino, avec 82,61 % de précision et 92,15 % de ROC-AUC, sans connexion internet." },
+    en: "Yes. In 2023 I co-authored a paper in IJSET with Acquah Andrews: a small neural network on an Arduino that screens for heart failure without internet. It reached 82.61% accuracy and 92.15% ROC-AUC.",
+    fr: "Oui. En 2023, j'ai co-signé un article dans IJSET avec Acquah Andrews : un petit réseau de neurones sur Arduino qui dépiste l'insuffisance cardiaque sans internet. 82,61 % de précision et 92,15 % de ROC-AUC." },
   { href: '#work', t: 'strikebase',
-    en: "Strikebase tells freelancers which jobs are worth bidding on. It was built at lablab.ai's Web Data UNLOCKED hackathon: it pulls live listings from five platforms with Bright Data and has Claude score each job from 0 to 100.",
-    fr: "Strikebase indique aux freelances quelles missions valent la peine. Réalisé au hackathon Web Data UNLOCKED de lablab.ai, il récupère les annonces de cinq plateformes avec Bright Data et fait noter chaque mission de 0 à 100 par Claude." },
+    en: "Strikebase shows freelancers which jobs are worth bidding on. I built it at a hackathon: it reads listings from five sites and Claude scores each one from 0 to 100.",
+    fr: "Strikebase montre aux freelances quelles missions valent le coup. Fait en hackathon : il lit les annonces de cinq sites et Claude note chacune de 0 à 100." },
   { href: '#work', t: 'rag',
-    en: "My main retrieval project is an agentic RAG pipeline: a LangGraph agent with Llama 3.3 on Groq and PGVector that decides when and what to search. It's one of five RAG projects I built.",
-    fr: "Mon principal projet de recherche documentaire est un pipeline RAG agentique : un agent LangGraph avec Llama 3.3 sur Groq et PGVector qui décide quand et quoi chercher. L'un de mes cinq projets RAG." },
+    en: "My main RAG project is an agent built with LangGraph, Groq and PGVector that decides when and what to search. It's one of five RAG projects.",
+    fr: "Mon principal projet RAG est un agent fait avec LangGraph, Groq et PGVector qui décide quand et quoi chercher. L'un de cinq projets RAG." },
   { href: '#work', t: 'jarvis',
-    en: "Jarvis is a project that runs fully offline: a voice assistant on my laptop, prototyped in Python and rewritten in C++ with whisper.cpp and llama.cpp. No internet, one program. My TinyML heart-screening research also runs offline, on a microcontroller.",
-    fr: "Jarvis est un projet qui tourne entièrement hors ligne : un assistant vocal sur mon ordinateur, prototypé en Python puis réécrit en C++ avec whisper.cpp et llama.cpp. Sans internet, un seul programme. Ma recherche TinyML tourne aussi hors ligne, sur un microcontrôleur." },
+    en: "Jarvis is a project that runs fully offline: a voice assistant on my laptop, first in Python, then rebuilt in C++ with whisper.cpp and llama.cpp. My heart-screening research also runs offline, on an Arduino.",
+    fr: "Jarvis est un projet qui tourne entièrement hors ligne : un assistant vocal sur mon ordinateur, d'abord en Python puis refait en C++ avec whisper.cpp et llama.cpp. Ma recherche sur le dépistage cardiaque tourne aussi hors ligne, sur Arduino." },
   { href: '#work', t: 'medical',
-    en: "On the medical side: a CNN that classifies breast MRI scans with over 90% accuracy, a CTGAN pipeline that generates synthetic patient data, and the TinyML heart-screening paper.",
-    fr: "Côté médical : un CNN qui classe des IRM mammaires avec plus de 90 % de précision, un pipeline CTGAN qui génère des données patients synthétiques, et l'article TinyML sur le dépistage cardiaque." },
-  { href: '#work', t: 'apps',
-    en: "Web products I've built include VocalLingua, a language-learning app with an AI tutor (Next.js and Django), and G Careers, a job-search companion that scores CVs and runs mock interviews.",
-    fr: "Parmi mes produits web : VocalLingua, une appli d'apprentissage des langues avec tuteur IA (Next.js et Django), et G Careers, un compagnon de recherche d'emploi qui note les CV et simule des entretiens." },
+    en: "On the medical side: a CNN that classifies breast MRI scans with over 90% accuracy, a generator of fake patient data for safe sharing, and the heart-screening paper.",
+    fr: "Côté médical : un CNN qui classe des IRM mammaires avec plus de 90 % de précision, un générateur de faux dossiers patients pour partager sans risque, et l'article sur le dépistage cardiaque." },
   { href: '#experience', t: 'glinax',
-    en: "From 2023 to 2025 I was CTO of GLINAX in Ghana: I led an AI study assistant for students, ran AI and robotics workshops and owned the product lifecycle.",
-    fr: "De 2023 à 2025, j'ai été CTO de GLINAX au Ghana : assistant d'étude IA pour étudiants, ateliers d'IA et de robotique, et cycle de vie produit." },
+    en: "From 2023 to 2025 I was CTO of GLINAX in Ghana. I led an AI study assistant for students and ran AI and robotics workshops.",
+    fr: "De 2023 à 2025, j'ai été CTO de GLINAX au Ghana. J'ai dirigé un assistant d'étude IA pour étudiants et animé des ateliers d'IA et de robotique." },
   { href: '#experience', t: 'education',
-    en: "I'm studying for an engineering degree in AI at JUNIA ISEN in Lille (2025–2027, Master's level), after a BSc in Computer Engineering at KNUST in Ghana (2021–2025).",
-    fr: "Je prépare un diplôme d'ingénieur en IA à JUNIA ISEN, à Lille (2025–2027, niveau master), après une licence d'ingénierie informatique à KNUST au Ghana (2021–2025)." },
+    en: "I'm doing an engineering degree in AI at JUNIA ISEN in Lille (2025 to 2027, Master's level). Before that, a BSc in Computer Engineering at KNUST in Ghana.",
+    fr: "Je prépare un diplôme d'ingénieur en IA à JUNIA ISEN, à Lille (2025 à 2027, niveau master). Avant, une licence d'ingénierie informatique à KNUST au Ghana." },
   { href: '#about', t: 'skills',
-    en: "My main tools and skills: Python, TypeScript, C/C++; TensorFlow, PyTorch and Hugging Face; LangGraph, Groq and PGVector; React, Next.js, Django and FastAPI; PostgreSQL, Docker and GCP. I speak English and French.",
-    fr: "Mes principaux outils et compétences : Python, TypeScript, C/C++ ; TensorFlow, PyTorch et Hugging Face ; LangGraph, Groq et PGVector ; React, Next.js, Django et FastAPI ; PostgreSQL, Docker et GCP. Je parle anglais et français." }
+    en: "Mostly Python and TypeScript, plus C/C++. For ML: TensorFlow, PyTorch and Hugging Face. For LLMs: LangGraph, Groq and PGVector. For web: React, Next.js, Vue, Django and FastAPI. I speak English and French.",
+    fr: "Surtout Python et TypeScript, plus C/C++. En ML : TensorFlow, PyTorch et Hugging Face. Pour les LLM : LangGraph, Groq et PGVector. En web : React, Next.js, Vue, Django et FastAPI. Je parle anglais et français." }
 ];
 const STOP = new Set(('a an the and or but of to in on at by for with from as is are was were be been being do does did has have had he him his she her it its this that these those what which who whom whose how why when can could would should will may might me my i you your we our they them their there here about tell any some anything something so if than then also into just not no please yes ' +
   'le la les un une des du de et ou mais en au aux pour par sur dans avec est sont etait il elle ils on ce cet cette ces se sa son ses que qu qui quoi quel quelle quels quelles comment pourquoi quand ne pas plus me mon ma mes vous votre nous je lui leur c t').split(' '));
 const SYN = {
   work: 'oxya alternance', working: 'oxya alternance', now: 'oxya', current: 'oxya', currently: 'oxya', job: 'oxya alternance', employer: 'oxya', company: 'oxya',
   travaillez: 'oxya alternance', travaille: 'oxya alternance', maintenant: 'oxya', actuellement: 'oxya', poste: 'oxya alternance', entreprise: 'oxya',
-  published: 'paper ijset', publish: 'paper ijset', paper: 'published ijset', papers: 'published ijset', publication: 'published paper', article: 'published paper', research: 'published paper ijset', publie: 'publie article ijset', recherche: 'article ijset',
-  offline: 'internet local', local: 'offline', hors: 'ligne internet', hackathon: 'strikebase lablab', freelance: 'strikebase',
+  published: 'paper ijset', publish: 'paper ijset', paper: 'ijset', papers: 'ijset', publication: 'paper ijset', article: 'paper ijset', research: 'paper ijset', publie: 'article ijset', recherche: 'article ijset',
+  offline: 'internet', local: 'offline', hors: 'ligne internet', hackathon: 'strikebase', freelance: 'strikebase',
+  cv: 'cvmaster', resume: 'cvmaster', product: 'cvmaster', produit: 'cvmaster', running: 'cvmaster live',
   contact: 'email reach', email: 'reach', mail: 'email', joindre: 'email', reach: 'email', hire: 'email',
   school: 'education junia knust', study: 'studying junia', studies: 'junia', education: 'junia knust', degree: 'junia bsc', etudes: 'junia diplome', diplome: 'junia licence', formation: 'junia knust',
-  skills: 'tools python', stack: 'tools python', tools: 'python', competences: 'outils python', outils: 'python',
+  skills: 'python tensorflow', stack: 'python', tools: 'python', competences: 'python', outils: 'python',
   health: 'medical cancer heart', healthcare: 'medical cancer heart', medical: 'cancer heart', sante: 'medical cancer cardiaque',
-  live: 'based tourcoing', based: 'tourcoing', where: 'tourcoing', habite: 'tourcoing',
+  live: 'loos lille', based: 'loos lille', where: 'loos lille', habitez: 'loos lille', habite: 'loos lille',
   experience: 'intern cto', parcours: 'stagiaire cto', languages: 'speak english french', langues: 'parle anglais'
 };
 const tokenize = s => s.toLowerCase().replace(/c\+\+/g, ' cpp ').replace(/c#/g, ' csharp ').normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -1397,7 +1476,7 @@ $('#cpCopy').addEventListener('click', async () => {
   const p = draftPost(); if (!p) return;
   const { local, ...rest } = p;
   rest.id = p.title.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
-  toast(await copyText(JSON.stringify(rest, null, 2) + ',') ? 'Copied — paste it at the top of the posts list in index.html.' : 'Copy failed.');
+  toast(await copyText(JSON.stringify(rest, null, 2) + ',') ? 'Copied. Paste it at the top of the posts list in index.html.' : 'Copy failed.');
 });
 
 /* ── language ── */
@@ -1409,6 +1488,8 @@ function applyLang() {
   html.lang = lang;
   $$('[data-i18n]').forEach(el => { const v = t[el.dataset.i18n] ?? en[el.dataset.i18n]; if (v !== undefined) el.innerHTML = v; });
   $$('[data-i18n-ph]').forEach(el => { el.placeholder = t[el.dataset.i18nPh] ?? en[el.dataset.i18nPh]; });
+  if (!finePointer) for (const [k, v] of Object.entries(U().touch)) $$(`[data-i18n="${k}"]`).forEach(el => { el.innerHTML = v; });
+  $('#dockAsk').setAttribute('aria-label', (t.ask_label ?? en.ask_label).replace(/<[^>]+>/g, ''));
   $$('#langBtn [data-l]').forEach(s => { s.className = s.dataset.l === lang ? 'on' : 'off'; });
   buildIndex(); renderSugg(); renderPosts(); tick(); syncTheme();
   askOut.hidden = true; askOut.innerHTML = '';
@@ -1422,7 +1503,8 @@ applyLang();
 setInterval(tick, 20000);
 
 /* ── header, back-to-top, menu, scroll-spy ── */
-const head = $('.site-head'), totop = $('#totop');
+const head = $('.site-head'), totop = $('#totop'), dock = $('#dock'), portraitImg = $('.portrait img');
+let lastY = scrollY;
 let scrollQueued = false;
 addEventListener('scroll', () => {
   if (scrollQueued) return;
@@ -1431,6 +1513,13 @@ addEventListener('scroll', () => {
     scrollQueued = false;
     head.classList.toggle('scrolled', scrollY > 8);
     totop.classList.toggle('show', scrollY > 900);
+    if (mqMobile.matches) {
+      const dy = scrollY - lastY;
+      if (dy > 6 && scrollY > 240) dock.classList.add('away'); else if (dy < -6 || scrollY < 240) dock.classList.remove('away');
+      if (!reduced && portraitImg) portraitImg.style.setProperty('--py', (Math.min(scrollY, 700) * .22).toFixed(1) + 'px');
+      updateCards();
+    }
+    lastY = scrollY;
   });
 }, { passive: true });
 
@@ -1440,7 +1529,7 @@ menuBtn.addEventListener('click', () => setMenu(menuPanel.hidden));
 menuPanel.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
 addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
-const navLinks = $$('.nav a');
+const navLinks = $$('.nav a, .dock a');
 const spy = new IntersectionObserver(entries => {
   entries.forEach(x => {
     if (!x.isIntersecting) return;
@@ -1454,7 +1543,6 @@ const reveal = new IntersectionObserver(entries => {
   entries.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); reveal.unobserve(x.target); } });
 }, { rootMargin: '0px 0px -12% 0px' });
 $$('.reveal, .proj').forEach(el => reveal.observe(el));
-addEventListener('beforeprint', () => $$('.reveal, .proj').forEach(el => el.classList.add('in')));
 
 /* ── contact ── */
 $('#copyEmail').addEventListener('click', async () => toast(await copyText(EMAIL) ? U().copied : U().copyFail));
@@ -1465,8 +1553,8 @@ $('#contactForm').addEventListener('submit', e => {
   Object.entries(checks).forEach(([id, msg]) => { $(`[data-err="${id}"]`).textContent = msg; });
   const bad = Object.keys(checks).find(id => checks[id]);
   if (bad) { $('#' + bad).focus(); return; }
-  const subject = encodeURIComponent(`Portfolio — ${v('cName')}`);
-  const body = encodeURIComponent(`${v('cMsg')}\n\n— ${v('cName')} (${v('cEmail')})`);
+  const subject = encodeURIComponent(`Portfolio: ${v('cName')}`);
+  const body = encodeURIComponent(`${v('cMsg')}\n\n${v('cName')} (${v('cEmail')})`);
   location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
   toast(U().mailOpen);
   e.currentTarget.reset();
@@ -1479,6 +1567,90 @@ $$('[data-cv]').forEach(b => b.addEventListener('click', () => {
   toast(U().cvHint);
   setTimeout(() => print(), 600);
 }));
+
+/* ── phones: ask sheet, card stack, tap ripple, share ── */
+// the ask form sits in the hero on desktop and inside a bottom sheet on phones
+const askForm = $('#askForm'), askHome = askForm.parentNode, sheet = $('#askSheet'), sheetBody = $('#sheetBody');
+function placeAsk() {
+  const target = mqMobile.matches ? sheetBody : askHome;
+  if (askForm.parentNode !== target) target.append(askForm);
+}
+function openSheet() {
+  placeAsk();
+  sheet.classList.remove('closing'); sheet.style.removeProperty('--drag');
+  if (!sheet.open) sheet.showModal();
+  buzz();
+  setTimeout(() => askInput.focus({ preventScroll: true }), 380);
+}
+function closeSheet() {
+  if (!sheet.open || sheet.classList.contains('closing')) return;
+  sheet.classList.add('closing');
+  setTimeout(() => { sheet.close(); sheet.classList.remove('closing'); sheet.style.removeProperty('--drag'); }, 320);
+}
+$('#dockAsk').addEventListener('click', openSheet);
+$('#sheetClose').addEventListener('click', closeSheet);
+sheet.addEventListener('cancel', e => { e.preventDefault(); closeSheet(); });
+// only a real tap on the dimmed backdrop closes it (keyboard "send" also fires a click, at 0,0)
+sheet.addEventListener('click', e => { if (e.target === sheet && e.detail > 0 && e.clientY < sheet.getBoundingClientRect().top) closeSheet(); });
+// drag the top of the sheet down to dismiss it
+let dragFrom = null;
+const sheetTop = $('#sheetTop');
+sheetTop.addEventListener('pointerdown', e => {
+  if (e.target.closest('button')) return;
+  dragFrom = e.clientY; sheet.classList.add('dragging'); sheetTop.setPointerCapture(e.pointerId);
+});
+sheetTop.addEventListener('pointermove', e => { if (dragFrom !== null) sheet.style.setProperty('--drag', Math.max(0, e.clientY - dragFrom) + 'px'); });
+const endDrag = e => {
+  if (dragFrom === null) return;
+  const d = e.clientY - dragFrom; dragFrom = null; sheet.classList.remove('dragging');
+  if (d > 90) closeSheet(); else sheet.style.removeProperty('--drag');
+};
+sheetTop.addEventListener('pointerup', endDrag);
+sheetTop.addEventListener('pointercancel', endDrag);
+
+// projects stack like cards: each one sticks once fully shown, the next slides over it
+const cards = $$('#work .proj');
+function layoutCards() {
+  const on = mqMobile.matches && !reduced;
+  cards.forEach(c => {
+    if (on) c.style.setProperty('--stick', Math.min(72, innerHeight - c.offsetHeight) + 'px');
+    else { c.style.removeProperty('--stick'); c.style.removeProperty('--cover'); }
+  });
+  updateCards();
+}
+function updateCards() {
+  if (!mqMobile.matches || reduced) return;
+  cards.forEach((c, i) => {
+    const next = cards[i + 1];
+    if (!next) return;
+    const nextStick = parseFloat(next.style.getPropertyValue('--stick')) || 72;
+    const top = next.getBoundingClientRect().top;
+    c.style.setProperty('--cover', clamp01((innerHeight - top) / (innerHeight - nextStick)).toFixed(3));
+  });
+}
+addEventListener('resize', layoutCards);
+mqMobile.addEventListener('change', () => { placeAsk(); layoutCards(); if (!mqMobile.matches && sheet.open) sheet.close(); });
+placeAsk();
+layoutCards();
+document.fonts && document.fonts.ready.then(layoutCards);
+
+$('#dock').addEventListener('click', e => { if (e.target.closest('a')) buzz(); });
+
+// a small lime ripple wherever a finger lands
+if (!finePointer && !reduced) addEventListener('pointerdown', e => {
+  if (e.pointerType === 'mouse') return;
+  const r = Object.assign(document.createElement('span'), { className: 'ripple' });
+  r.style.left = e.clientX + 'px'; r.style.top = e.clientY + 'px';
+  document.body.append(r);
+  setTimeout(() => r.remove(), 650);
+}, { passive: true });
+
+// native share sheet where the browser has one
+const shareBtn = $('#shareBtn');
+if (navigator.share) {
+  shareBtn.hidden = false;
+  shareBtn.addEventListener('click', () => navigator.share({ title: document.title, url: location.href.split('#')[0] }).catch(() => {}));
+}
 
 /* ── cursor + magnetic buttons (mouse only) ── */
 if (finePointer && !reduced) {
