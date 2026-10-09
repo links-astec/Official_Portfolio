@@ -259,6 +259,8 @@ html.gates-open { overflow: hidden; }
 .pl > span { display: inline-block; }
 .js .pl > span { opacity: 0; animation: rise 1s var(--ease) var(--d, 0s) forwards; }
 .pl.soft { color: var(--muted); }
+.name-tag { display: block; width: max-content; position: relative; z-index: 3; margin: .06em 0 .1em 3%; padding: .34em .75em .3em; border-radius: 999px; background: var(--hi); color: var(--hi-ink); font-size: clamp(.95rem, 2.1vw, 1.7rem); line-height: 1; letter-spacing: .04em; transform: rotate(-3deg); }
+@media (max-width: 759px) { .pl-first { --fit: 1; } .pl-last { --fit: .74; } }
 .pc { display: inline-block; transform-origin: 50% 100%; transition: transform .35s var(--ease), color .3s; }
 .pc.hot { color: var(--hi-text); }
 .polaroid { position: absolute; right: 2%; bottom: 0; z-index: 2; width: min(21%, 260px); margin: 0; padding: 10px 10px 0; background: #fff; color: #000; box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .7); cursor: grab; touch-action: none; user-select: none; }
@@ -272,7 +274,7 @@ html.gates-open { overflow: hidden; }
 .polaroid.drag { cursor: grabbing; transition: none; }
 .polaroid .stamp { right: -40px; top: -40px; }
 @media (max-width: 759px) {
-  .polaroid { position: relative; right: auto; bottom: auto; width: 56%; margin: 22px 4% 0 auto; padding: 8px 8px 0; }
+  .polaroid { position: relative; right: auto; bottom: auto; width: 66%; margin: 30px auto 6px; padding: 8px 8px 0; }
   .polaroid figcaption { padding: 7px 2px 9px; font-size: .72rem; }
   .polaroid .tape { width: 60px; margin-left: -30px; height: 20px; top: -10px; }
   .polaroid .stamp { width: 76px; right: -4px; top: -34px; }
@@ -285,7 +287,7 @@ html.gates-open { overflow: hidden; }
 .ask-field { display: flex; gap: 8px; }
 .ask-field input { flex: 1; min-width: 0; font: 400 1rem/1.2 var(--sans); color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; padding: .8em 1em; outline: none; transition: border-color .2s; }
 .ask-field input:focus { border-color: var(--hi-text); }
-.ask-field input::placeholder { color: var(--muted); }
+.ask-field input::placeholder { color: var(--muted); font-style: italic; font-weight: 400; }
 .ask-go { flex: none; width: 46px; border-radius: 4px; border: 0; background: var(--hi); color: var(--hi-ink); cursor: pointer; font-size: 1.05rem; font-weight: 700; transition: background-color .2s, color .2s; }
 .ask-go:hover { background: var(--ink); color: var(--bg); }
 .ask-sugg { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
@@ -296,7 +298,7 @@ html.gates-open { overflow: hidden; }
 .ask-link { display: inline-block; margin-top: 10px; font-size: .9rem; font-weight: 600; }
 
 /* sections */
-.section { border-top: 1px solid var(--rule); padding: clamp(64px, 9vw, 120px) 0; }
+.section { padding: clamp(64px, 9vw, 120px) 0; }
 .sec-head { display: grid; gap: 14px; margin-bottom: clamp(32px, 5vw, 56px); }
 @media (min-width: 900px) { .sec-head { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 48px; } }
 .sec-head h2 { font-size: clamp(2.6rem, 6.5vw, 5.4rem); line-height: .92; font-weight: 850; font-stretch: 114%; text-transform: uppercase; }
@@ -375,7 +377,7 @@ html.gates-open { overflow: hidden; }
 
 /* projects */
 #work { padding-bottom: 0; }
-.proj { border-top: 1px solid var(--rule); padding: clamp(48px, 7vw, 88px) 0; min-height: min(80vh, 820px); display: grid; align-items: center; }
+.proj { padding: clamp(48px, 7vw, 88px) 0; min-height: min(80vh, 820px); display: grid; align-items: center; }
 .proj-in { display: grid; gap: 28px; align-items: center; }
 @media (min-width: 900px) {
   .proj-in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 80px); }
@@ -533,7 +535,7 @@ html:has(dialog[open]) { overflow: hidden; }
 .contact-form .err { display: block; min-height: 1.3em; margin-top: 4px; font-size: .8rem; font-weight: 600; color: #000; }
 .lt { font-size: clamp(1.35rem, 2.4vw, 1.95rem); line-height: 1.65; font-weight: 750; letter-spacing: -.01em; }
 .slot input { width: 10ch; max-width: 100%; font: inherit; color: var(--hi-ink); background: transparent; border: 0; border-bottom: 2.5px solid var(--hi-ink); border-radius: 0; padding: 0 .1em; outline: none; transition: border-color .2s; }
-.slot input::placeholder { color: var(--hi-ink); font-weight: 500; }
+.slot input::placeholder { color: var(--hi-ink); font-style: italic; font-weight: 400; }
 .slot input:focus { border-bottom-color: var(--hi-ink); }
 .errs { display: flex; flex-wrap: wrap; gap: 0 18px; margin-top: -10px; }
 .errs .err { min-height: 0; margin: 0; }
@@ -546,7 +548,7 @@ html:has(dialog[open]) { overflow: hidden; }
 .topics input:checked + span { background: var(--hi-ink); color: var(--hi); }
 .topics input:focus-visible + span { outline: 2px solid var(--hi-ink); outline-offset: 3px; }
 .letter .field textarea { font-size: 1.1rem; min-height: 110px; border: 2px solid var(--hi-ink); border-radius: 8px; padding: 12px 14px; }
-.letter .field textarea::placeholder { color: var(--hi-ink); }
+.letter .field textarea::placeholder { color: var(--hi-ink); font-style: italic; }
 .letter .field textarea:focus { border-color: var(--hi-ink); }
 .contact .btn { background: var(--hi-ink); color: var(--hi); }
 .contact .btn:hover { background: #000; color: #fff; }
@@ -646,54 +648,23 @@ html.has-cursor input, html.has-cursor textarea { cursor: text !important; }
 }
 
 /* ── mobile ── */
-.dock, .share-btn[hidden] { display: none; }
+.share-btn[hidden] { display: none; }
 .share-btn { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; color: inherit; text-decoration: underline; text-decoration-color: var(--muted); text-underline-offset: .22em; }
 .ripple { position: fixed; z-index: 999; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; border: 2px solid var(--hi); pointer-events: none; animation: ripple .6s var(--ease) forwards; }
 @keyframes ripple { to { transform: scale(5.5); opacity: 0; } }
-dialog.sheet { position: fixed; inset: auto 0 0 0; margin: 0; width: 100%; max-width: none; max-height: 86svh; border: 0; border-top: 1px solid var(--rule); border-radius: 22px 22px 0 0; padding: 0 var(--gutter) calc(22px + env(safe-area-inset-bottom)); background: var(--panel); box-shadow: 0 -20px 60px rgba(0,0,0,.5); overflow: auto; transform: translateY(var(--drag, 0px)); transition: transform .35s var(--ease); }
-dialog.sheet.dragging { transition: none; }
-dialog.sheet.closing { transform: translateY(105%); }
-dialog.sheet[open]:not(.closing) { animation: sheet-up .5s var(--ease); }
-@keyframes sheet-up { from { transform: translateY(100%); } }
-.sheet-top { touch-action: none; padding-top: 10px; cursor: grab; }
-.sheet-grab { width: 42px; height: 4px; border-radius: 2px; background: var(--muted); opacity: .5; margin: 0 auto 14px; }
-.sheet-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
-.sheet .ask { margin-top: 0; max-width: none; }
-.sheet .ask > label { display: none; }
-.sheet .ask-out { max-height: 40svh; overflow: auto; }
 
 @media (max-width: 899px) {
-  body { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
-  .totop { right: 14px; bottom: calc(92px + env(safe-area-inset-bottom)); width: 46px; height: 46px; }
+  .totop { right: 14px; bottom: calc(14px + env(safe-area-inset-bottom)); width: 46px; height: 46px; }
 
   /* hero */
   .hero { padding-top: 14px; }
-  .hero .ask { display: none; }
 
-  /* projects: a deck of cards that stack as you scroll */
-  .proj { position: sticky; top: var(--stick, 72px); min-height: 0; padding: 26px 0 34px; background: var(--bg); border-top: 1px solid var(--rule); border-radius: 22px 22px 0 0; box-shadow: 0 -18px 40px rgba(0,0,0,.35); transform: scale(calc(1 - var(--cover, 0) * .07)); transform-origin: 50% 0; }
-  .proj::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #000; opacity: calc(var(--cover, 0) * .55); pointer-events: none; }
+  /* projects */
+  .proj { min-height: 0; padding: 44px 0; }
   .proj-in { gap: 20px; }
   .viz { aspect-ratio: 4 / 3; }
   .proj h3 { margin-top: 8px; }
   .proj .desc { margin-top: 12px; }
-
-  /* bottom tab bar */
-  .dock { display: grid; grid-template-columns: repeat(5, 1fr); align-items: end; position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom)); z-index: 45; height: 62px; padding: 0 4px 8px; background: var(--panel); -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4); border: 1px solid var(--rule); border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,.45); transition: transform .45s var(--ease), opacity .3s; }
-  .dock.away { transform: translateY(calc(100% + 24px)); opacity: 0; }
-  .dock a { display: grid; justify-items: center; gap: 3px; text-decoration: none; color: var(--muted); font-size: .64rem; font-weight: 600; letter-spacing: .02em; padding-top: 8px; -webkit-tap-highlight-color: transparent; transition: color .2s; }
-  .dock a span { white-space: nowrap; }
-  .dock svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s var(--ease); }
-  .dock a[aria-current="true"] { color: var(--hi-text); }
-  .dock a[aria-current="true"] svg { transform: translateY(-2px); }
-  .dock a:active svg { transform: scale(.88); }
-  .dock-ask { justify-self: center; align-self: start; width: 58px; height: 58px; margin-top: -22px; border-radius: 50%; border: 4px solid var(--bg); background: var(--hi); color: var(--hi-ink); display: grid; place-items: center; cursor: pointer; box-shadow: 0 8px 24px var(--hi); -webkit-tap-highlight-color: transparent; transition: transform .25s var(--ease); }
-  .dock-ask:active { transform: scale(.92); }
-  .dock-ask svg { width: 24px; height: 24px; stroke-width: 1.8; }
-}
-@media (max-width: 899px) and (prefers-reduced-motion: reduce) {
-  .proj { position: relative; top: 0; transform: none; }
-  .proj::after { display: none; }
 }
 
 /* one-page CV, only used when printing */
@@ -774,9 +745,9 @@ dialog.sheet[open]:not(.closing) { animation: sheet-up .5s var(--ease); }
       <div class="hv-poster">
         <div class="poster-stage">
           <h1 class="poster-name" aria-label="Gabriel Nii Attoh Quaye">
-            <span class="pl" data-fit="1" style="--d:.05s"><span>Gabriel</span></span>
-            <span class="pl soft" data-fit="1" style="--d:.15s"><span>Nii Attoh</span></span>
-            <span class="pl" data-fit=".6" style="--d:.25s"><span>Quaye</span></span>
+            <span class="pl pl-first" data-fit=".76" style="--d:.05s"><span>Gabriel</span></span>
+            <span class="name-tag" aria-hidden="true">Nii Attoh</span>
+            <span class="pl pl-last" data-fit=".6" style="--d:.25s"><span>Quaye</span></span>
           </h1>
           <figure class="polaroid rise" id="polaroid" style="--d:.45s">
             <span class="tape" aria-hidden="true"></span>
@@ -1175,21 +1146,7 @@ dialog.sheet[open]:not(.closing) { animation: sheet-up .5s var(--ease); }
 </dialog>
 
 <!-- Mobile only: bottom tab bar and the "Ask" sheet -->
-<nav class="dock" id="dock" aria-label="Quick navigation">
-  <a href="#work"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></svg><span data-i18n="nav_work">Work</span></a>
-  <a href="#research"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20.5H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></svg><span data-i18n="nav_research">Research</span></a>
-  <button class="dock-ask" id="dockAsk" type="button" aria-label="Search this site"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></svg></button>
-  <a href="#about"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20.5c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/></svg><span data-i18n="nav_about">About</span></a>
-  <a href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4 6.5 8 6.5 8-6.5"/></svg><span data-i18n="nav_contact">Contact</span></a>
-</nav>
 
-<dialog class="sheet" id="askSheet" aria-labelledby="sheetTitle">
-  <div class="sheet-top" id="sheetTop">
-    <div class="sheet-grab" aria-hidden="true"></div>
-    <div class="sheet-head"><p class="label" id="sheetTitle" data-i18n="ask_label">Search this site</p><button class="tool" id="sheetClose" type="button" data-i18n="close">Close</button></div>
-  </div>
-  <div class="sheet-body" id="sheetBody"></div>
-</dialog>
 
 <!-- One-page CV: hidden on screen, it is what prints when someone clicks "Download CV". -->
 <section class="cvp" aria-hidden="true">
@@ -2004,7 +1961,6 @@ function applyLang() {
   $$('[data-i18n-ph]').forEach(el => { el.placeholder = t[el.dataset.i18nPh] ?? en[el.dataset.i18nPh]; });
   fitSlots();
   if (!finePointer) for (const [k, v] of Object.entries(U().touch)) $$(`[data-i18n="${k}"]`).forEach(el => { el.innerHTML = v; });
-  $('#dockAsk').setAttribute('aria-label', (t.ask_label ?? en.ask_label).replace(/<[^>]+>/g, ''));
   $$('#langBtn [data-l]').forEach(s => { s.className = s.dataset.l === lang ? 'on' : 'off'; });
   buildIndex(); renderSugg(); renderPosts(); tick(); syncTheme(); splitBig();
   askOut.hidden = true; askOut.innerHTML = '';
@@ -2088,7 +2044,8 @@ function fitLines() {
     if (!box) return;
     line.style.fontSize = '100px';
     const w = inner.offsetWidth;
-    if (w) line.style.fontSize = (100 * box * parseFloat(line.dataset.fit) / w).toFixed(2) + 'px';
+    const fit = parseFloat(getComputedStyle(line).getPropertyValue('--fit')) || parseFloat(line.dataset.fit);
+    if (w) line.style.fontSize = (100 * box * fit / w).toFixed(2) + 'px';
   });
 }
 fitLines();
@@ -2236,8 +2193,7 @@ $('#totop').addEventListener('click', () => {
   }
   setTimeout(() => t.classList.remove('launch'), 1150);
 });
-const head = $('.site-head'), totop = $('#totop'), dock = $('#dock'), portraitImg = $('.portrait img');
-let lastY = scrollY;
+const head = $('.site-head'), totop = $('#totop');
 let scrollQueued = false;
 addEventListener('scroll', () => {
   if (scrollQueued) return;
@@ -2248,13 +2204,6 @@ addEventListener('scroll', () => {
     const prog = (scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight)).toFixed(4);
     head.style.setProperty('--p', prog); totop.style.setProperty('--p', prog);
     totop.classList.toggle('show', scrollY > 900);
-    if (mqMobile.matches) {
-      const dy = scrollY - lastY;
-      if (dy > 6 && scrollY > 240) dock.classList.add('away'); else if (dy < -6 || scrollY < 240) dock.classList.remove('away');
-      if (!reduced && portraitImg) portraitImg.style.setProperty('--py', (Math.min(scrollY, 700) * .22).toFixed(1) + 'px');
-      updateCards();
-    }
-    lastY = scrollY;
   });
 }, { passive: true });
 
@@ -2296,11 +2245,9 @@ document.addEventListener('langchange', () => { labelGates(true); setNow(nowId, 
 menuPanel.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
 addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
-const navLinks = $$('.gate, .dock a');
 const spy = new IntersectionObserver(entries => {
   entries.forEach(x => {
     if (!x.isIntersecting) return;
-    $$('.dock a').forEach(a => a.getAttribute('href') === '#' + x.target.id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
     setNow(x.target.id);
   });
 }, { rootMargin: '-40% 0px -55% 0px' });
@@ -2342,74 +2289,7 @@ $$('[data-cv]').forEach(b => b.addEventListener('click', () => {
   setTimeout(() => print(), 600);
 }));
 
-/* ── phones: ask sheet, card stack, tap ripple, share ── */
-// the ask form sits in the hero on desktop and inside a bottom sheet on phones
-const askForm = $('#askForm'), askHome = askForm.parentNode, sheet = $('#askSheet'), sheetBody = $('#sheetBody');
-function placeAsk() {
-  const target = mqMobile.matches ? sheetBody : askHome;
-  if (askForm.parentNode !== target) target.append(askForm);
-}
-function openSheet() {
-  placeAsk();
-  sheet.classList.remove('closing'); sheet.style.removeProperty('--drag');
-  if (!sheet.open) sheet.showModal();
-  buzz();
-  setTimeout(() => askInput.focus({ preventScroll: true }), 380);
-}
-function closeSheet() {
-  if (!sheet.open || sheet.classList.contains('closing')) return;
-  sheet.classList.add('closing');
-  setTimeout(() => { sheet.close(); sheet.classList.remove('closing'); sheet.style.removeProperty('--drag'); }, 320);
-}
-$('#dockAsk').addEventListener('click', openSheet);
-$('#sheetClose').addEventListener('click', closeSheet);
-sheet.addEventListener('cancel', e => { e.preventDefault(); closeSheet(); });
-// only a real tap on the dimmed backdrop closes it (keyboard "send" also fires a click, at 0,0)
-sheet.addEventListener('click', e => { if (e.target === sheet && e.detail > 0 && e.clientY < sheet.getBoundingClientRect().top) closeSheet(); });
-// drag the top of the sheet down to dismiss it
-let dragFrom = null;
-const sheetTop = $('#sheetTop');
-sheetTop.addEventListener('pointerdown', e => {
-  if (e.target.closest('button')) return;
-  dragFrom = e.clientY; sheet.classList.add('dragging'); sheetTop.setPointerCapture(e.pointerId);
-});
-sheetTop.addEventListener('pointermove', e => { if (dragFrom !== null) sheet.style.setProperty('--drag', Math.max(0, e.clientY - dragFrom) + 'px'); });
-const endDrag = e => {
-  if (dragFrom === null) return;
-  const d = e.clientY - dragFrom; dragFrom = null; sheet.classList.remove('dragging');
-  if (d > 90) closeSheet(); else sheet.style.removeProperty('--drag');
-};
-sheetTop.addEventListener('pointerup', endDrag);
-sheetTop.addEventListener('pointercancel', endDrag);
-
-// projects stack like cards: each one sticks once fully shown, the next slides over it
-const cards = $$('#work .proj');
-function layoutCards() {
-  const on = mqMobile.matches && !reduced;
-  cards.forEach(c => {
-    if (on) c.style.setProperty('--stick', Math.min(72, innerHeight - c.offsetHeight) + 'px');
-    else { c.style.removeProperty('--stick'); c.style.removeProperty('--cover'); }
-  });
-  updateCards();
-}
-function updateCards() {
-  if (!mqMobile.matches || reduced) return;
-  cards.forEach((c, i) => {
-    const next = cards[i + 1];
-    if (!next) return;
-    const nextStick = parseFloat(next.style.getPropertyValue('--stick')) || 72;
-    const top = next.getBoundingClientRect().top;
-    c.style.setProperty('--cover', clamp01((innerHeight - top) / (innerHeight - nextStick)).toFixed(3));
-  });
-}
-addEventListener('resize', layoutCards);
-mqMobile.addEventListener('change', () => { placeAsk(); layoutCards(); if (!mqMobile.matches && sheet.open) sheet.close(); });
-placeAsk();
-layoutCards();
-document.fonts && document.fonts.ready.then(layoutCards);
-
-$('#dock').addEventListener('click', e => { if (e.target.closest('a')) buzz(); });
-
+/* ── phones: tap ripple, share ── */
 // a small lime ripple wherever a finger lands
 if (!finePointer && !reduced) addEventListener('pointerdown', e => {
   if (e.pointerType === 'mouse') return;
